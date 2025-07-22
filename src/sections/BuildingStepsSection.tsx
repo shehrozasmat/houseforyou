@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../components/ui/Button';
+import { getImagePath } from '../utils/imagePath';
 
 export const BuildingStepsSection: React.FC = () => {
   const steps = [
@@ -12,7 +13,7 @@ export const BuildingStepsSection: React.FC = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-5">
-        
+
         <div className="text-center mb-16">
           <h2 
             className="text-4xl md:text-5xl font-extrabold text-primary mb-8"
@@ -29,7 +30,7 @@ export const BuildingStepsSection: React.FC = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-16 items-center">
-          
+
           <div className="lg:w-1/3 flex flex-col items-center">
             <div className="flex flex-col gap-6">
               {steps.map((step, index) => (
@@ -71,7 +72,7 @@ export const BuildingStepsSection: React.FC = () => {
             <div 
               className="w-full h-96 bg-gray-300 rounded-lg"
               style={{
-                backgroundImage: `url('/Zrzut ekranu 2025-03-13 o 13.57.05.png')`,
+                backgroundImage: `url('${getImagePath('/Zrzut ekranu 2025-03-13 o 13.57.05.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 maxWidth: '583px',
@@ -94,7 +95,7 @@ export const BuildingStepsSection: React.FC = () => {
               >
                 Proces budowy
               </h3>
-              
+
               <p 
                 className="text-lg font-bold text-primary leading-relaxed mb-4"
                 style={{
@@ -110,7 +111,7 @@ export const BuildingStepsSection: React.FC = () => {
                 Zaczynając od wyboru działki, projektu samej budowy Inwestor ma wpływ na każdy aspekt. 
                 Nie dostanie się tego kupując gotową nieruchomość.
               </p>
-              
+
               <div className="flex items-center gap-2 mb-6">
                 <div className="w-1 h-6" style={{ backgroundColor: '#9DADAB' }}></div>
                 <span 
@@ -138,7 +139,7 @@ export const BuildingStepsSection: React.FC = () => {
                 >
                   Przeglądaj projekty
                 </Button>
-                
+
                 <Button 
                   variant="outlined"
                   className="w-full"

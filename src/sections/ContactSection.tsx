@@ -1,11 +1,12 @@
 import React from 'react';
+import { getImagePath } from '../utils/imagePath';
 
 export const ContactSection: React.FC = () => {
   return (
     <section 
       className="relative py-24"
       style={{
-        backgroundImage: `url('/image contact form.png')`,
+        backgroundImage: `url('${getImagePath('/image contact form.png')}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
@@ -14,10 +15,10 @@ export const ContactSection: React.FC = () => {
         className="absolute inset-0"
         style={{ backgroundColor: '#0A332D' }}
       />
-      
+
       <div className="relative z-10 container mx-auto px-5">
         <div className="max-w-4xl mx-auto text-center">
-          
+
           <div className="mb-12">
             <h2 
               className="text-3xl md:text-4xl font-normal text-secondary mb-4"

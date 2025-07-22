@@ -1,16 +1,17 @@
 import React from 'react';
+import { getImagePath } from '../utils/imagePath';
 
 export const AboutSection: React.FC = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-5">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
-          
+
           <div className="lg:w-1/2 relative">
             <div 
               className="w-full h-96 lg:h-[658px] bg-gray-300 rounded-lg relative"
               style={{
-                backgroundImage: `url('/image about.png')`,
+                backgroundImage: `url('${getImagePath('/image about.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
               }}
@@ -31,7 +32,7 @@ export const AboutSection: React.FC = () => {
                 >
                   Nasza misja
                 </h2>
-                
+
                 <div className="space-y-6">
                   <p 
                     className="text-lg font-bold text-primary leading-relaxed"
@@ -48,7 +49,7 @@ export const AboutSection: React.FC = () => {
                     poprzez nowoczesne technologie murowane. Ponadto celem jest budowanie domów energooszczędnych 
                     z zastosowaniem bardzo dobrych materiałów izolacyjnych, jak wysokiej jakości styropiany oraz wełna mineralna.
                   </p>
-                  
+
                   <p 
                     className="text-lg font-bold text-primary leading-relaxed"
                     style={{
@@ -63,7 +64,7 @@ export const AboutSection: React.FC = () => {
                     zastosowane nowoczesne urządzenia takie jak: pompy ciepła powietrzne lub gruntowe, nowoczesne piece gazowe, 
                     fotowoltaika, rekuperacja, klimatyzacja, „inteligentny dom". Dążymy do stosowania nowoczesnych rozwiązań dachowych.
                   </p>
-                  
+
                   <div className="flex items-center gap-2">
                     <div className="w-1 h-6" style={{ backgroundColor: '#9DADAB' }}></div>
                     <span 

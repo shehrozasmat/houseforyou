@@ -1,19 +1,20 @@
 import React from 'react';
+import { getImagePath } from '../utils/imagePath';
 
 export const GallerySection: React.FC = () => {
   const projects = [
-    { image: '/strzeniówka51 1.png', description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: '/thumb2 1.png', description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: '/ursus 1.png', description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: '/strzeniówka51 1.png', description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: '/thumb2 1.png', description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: '/ursus 1.png', description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
+    { image: getImagePath('/strzeniówka51 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
+    { image: getImagePath('/thumb2 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
+    { image: getImagePath('/ursus 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
+    { image: getImagePath('/strzeniówka51 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
+    { image: getImagePath('/thumb2 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
+    { image: getImagePath('/ursus 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
   ];
 
   return (
     <section className="py-16 bg-white">
       <div className="max-w-[1660px] mx-auto px-5">
-        
+
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 
             className="mb-8"
@@ -29,7 +30,7 @@ export const GallerySection: React.FC = () => {
             Na przestrzeni 30 lat zmieniły się trendy, jednak to, co pozostało niezmienne, 
             to jakość wybudowanych przez nas domów
           </h2>
-          
+
           <div className="mb-8">
             <p 
               className="mb-4"
@@ -45,7 +46,7 @@ export const GallerySection: React.FC = () => {
               Firma budowlana House-4-You to dobre rozwiązanie dla Twojej inwestycji budowy domu. 
               Z nami zrealizujesz marzenie o własnym domu lub funkcjonalnym biurze od A do Z.
             </p>
-            
+
             <div className="flex items-center justify-center gap-2 mb-6">
               <div 
                 className="w-1 h-6"

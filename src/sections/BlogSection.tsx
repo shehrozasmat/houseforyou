@@ -1,20 +1,21 @@
 import React from 'react';
 import { Button } from '../components/ui/Button';
+import { getImagePath } from '../utils/imagePath';
 
 export const BlogSection: React.FC = () => {
   const blogPosts = [
     {
-      image: '/strzeniówka51 1.png',
+      image: getImagePath('/strzeniówka51 1.png'),
       title: 'Warszawa',
       description: 'Realizacja na terenie Warszawy\nWykonawca: House-4-you',
     },
     {
-      image: '/thumb2 1.png', 
+      image: getImagePath('/thumb2 1.png'), 
       title: 'Warszawa',
       description: 'Realizacja na terenie Warszawy\nWykonawca: House-4-you',
     },
     {
-      image: '/ursus 1.png',
+      image: getImagePath('/ursus 1.png'),
       title: 'Warszawa', 
       description: 'Realizacja na terenie Warszawy\nWykonawca: House-4-you',
     },
@@ -23,7 +24,7 @@ export const BlogSection: React.FC = () => {
   return (
     <section className="py-16" style={{ background: 'linear-gradient(121.01deg, rgba(249, 246, 241, 0.5) 26.39%, #FFFFFF 57.32%)' }}>
       <div className="container mx-auto px-5">
-        
+
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 
             className="text-4xl md:text-5xl font-extrabold text-primary mb-8"
@@ -37,7 +38,7 @@ export const BlogSection: React.FC = () => {
           >
             Blog - Przewodnik dla inwestorów
           </h2>
-          
+
           <div className="mb-8">
             <p 
               className="text-lg font-bold text-primary leading-relaxed"
@@ -54,7 +55,7 @@ export const BlogSection: React.FC = () => {
               aż po finalne wykończenie. Dlatego stworzyliśmy Kompendium Wiedzy (Blog), które pozwala przeanalizować 
               wszystkie koszty budowy domu – od A do Z.
             </p>
-            
+
             <div className="flex items-center justify-center gap-2 mt-4">
               <div className="w-1 h-6" style={{ backgroundColor: '#9DADAB' }}></div>
               <span 

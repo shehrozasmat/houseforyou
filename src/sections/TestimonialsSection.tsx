@@ -1,28 +1,29 @@
 import React from 'react';
+import { getImagePath } from '../utils/imagePath';
 
 export const TestimonialsSection: React.FC = () => {
   const testimonials = [
     {
       name: 'Anna',
       text: 'Chcę wyrazić swoje podziękowania',
-      image: '/Zbyszek.png',
+      image: getImagePath('/Zbyszek.png'),
     },
     {
       name: 'Zbyszek', 
       text: 'Chcę wyrazić swoje podziękowania',
-      image: '/Zbyszek.png',
+      image: getImagePath('/Zbyszek.png'),
     },
     {
       name: 'Robert',
       text: 'Chcę wyrazić swoje podziękowania', 
-      image: '/michal (1) 1.png',
+      image: getImagePath('/michal (1) 1.png'),
     },
   ];
 
   return (
     <section className="py-16" style={{ background: 'linear-gradient(121.01deg, rgba(249, 246, 241, 0.5) 26.39%, #FFFFFF 57.32%)' }}>
       <div className="container mx-auto px-5">
-        
+
         <div className="max-w-4xl mx-auto mb-16">
           <h2 
             className="text-4xl font-bold text-text-light mb-8"
@@ -36,7 +37,7 @@ export const TestimonialsSection: React.FC = () => {
           >
             Zbuduj z nami swój dom
           </h2>
-          
+
           <div className="mb-8">
             <p 
               className="text-lg font-bold text-primary leading-relaxed"
@@ -53,7 +54,7 @@ export const TestimonialsSection: React.FC = () => {
               na wieloletniej wiedzy i rzetelnym podejściu do inwestycji. W budownictwie nie zawsze klienci mają 
               okazję poznać wszystkie wyzwania i pułapki, dlatego nasza kompleksowa oferta budowlana cieszy się dużym zaufaniem.
             </p>
-            
+
             <div className="flex items-center gap-2 mt-4">
               <div className="w-1 h-6" style={{ backgroundColor: '#9DADAB' }}></div>
               <span 

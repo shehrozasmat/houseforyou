@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImagePath } from '../utils/imagePath';
 
 export const FeaturesSection: React.FC = () => {
   const features = [
@@ -24,9 +25,9 @@ export const FeaturesSection: React.FC = () => {
       }}
     >
       <div className="max-w-[1660px] mx-auto px-5">
-        
+
         <div className="flex flex-col lg:flex-row gap-16 items-center mb-16">
-          
+
           <div className="lg:w-1/2">
             <h2 
               className="mb-8"
@@ -40,7 +41,7 @@ export const FeaturesSection: React.FC = () => {
             >
               Zbuduj z nami swój dom
             </h2>
-            
+
             <div className="mb-8">
               <p 
                 className="mb-4"
@@ -56,7 +57,7 @@ export const FeaturesSection: React.FC = () => {
                 przez stan surowy, deweloperski, prace pod klucz, zagospodarowanie terenu i ogród. Dbamy o każdy detal budowy. 
                 Jakość potwierdzamy 10-cio letnią gwarancją. Z nami Twoje marzenie o budowie domu stanie się rzeczywistością.
               </p>
-              
+
               <div className="flex items-center gap-2">
                 <div 
                   className="w-1 h-6"
@@ -101,7 +102,7 @@ export const FeaturesSection: React.FC = () => {
             <div 
               className="w-full rounded-lg"
               style={{
-                backgroundImage: `url('/promo banner desktop.png')`,
+                backgroundImage: `url('${getImagePath('/promo banner desktop.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 maxWidth: '600px',

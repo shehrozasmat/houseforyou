@@ -1,13 +1,14 @@
 import React from 'react';
+import { getImagePath } from '../utils/imagePath';
 
 export const ImageGallerySection: React.FC = () => {
   const galleryImages = [
-    '/Rectangle 57.png',
-    '/Rectangle 58.png', 
-    '/Rectangle 59.png',
-    '/Rectangle 60.png',
-    '/Rectangle 61.png',
-    '/Rectangle 62.png',
+    getImagePath('/Rectangle 57.png'),
+    getImagePath('/Rectangle 58.png'), 
+    getImagePath('/Rectangle 59.png'),
+    getImagePath('/Rectangle 60.png'),
+    getImagePath('/Rectangle 61.png'),
+    getImagePath('/Rectangle 62.png'),
   ];
 
   return (
@@ -18,7 +19,7 @@ export const ImageGallerySection: React.FC = () => {
       }}
     >
       <div className="max-w-[1660px] mx-auto px-5">
-        
+
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 
             className="mb-8"
@@ -33,7 +34,7 @@ export const ImageGallerySection: React.FC = () => {
           >
             30 lat doświadczeń
           </h2>
-          
+
           <div className="mb-8">
             <p 
               style={{
@@ -51,7 +52,7 @@ export const ImageGallerySection: React.FC = () => {
               Choć wyzwania trwały do 2008 roku, kiedy wysokie koszty zahamowały popyt i wywołały kryzys w branży, 
               pozytywnym aspektem było ustabilizowanie cen materiałów i robocizny.
             </p>
-            
+
             <div className="flex items-center justify-center gap-2 mt-4">
               <div 
                 className="w-1 h-6"
