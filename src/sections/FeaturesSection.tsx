@@ -102,7 +102,7 @@ export const FeaturesSection: React.FC = () => {
             <div 
               className="w-full rounded-lg"
               style={{
-                backgroundImage: `url('${getImagePath('/promo banner desktop.png')}')`,
+                backgroundImage: `url('${getImagePath('/houseforyou/promo banner desktop.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 maxWidth: '600px',

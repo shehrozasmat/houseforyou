@@ -6,17 +6,17 @@ export const TestimonialsSection: React.FC = () => {
     {
       name: 'Anna',
       text: 'Chcę wyrazić swoje podziękowania',
-      image: getImagePath('/Zbyszek.png'),
+      image: getImagePath('/houseforyou/Zbyszek.png'),
     },
     {
       name: 'Zbyszek', 
       text: 'Chcę wyrazić swoje podziękowania',
-      image: getImagePath('/Zbyszek.png'),
+      image: getImagePath('/houseforyou/Zbyszek.png'),
     },
     {
       name: 'Robert',
       text: 'Chcę wyrazić swoje podziękowania', 
-      image: getImagePath('/michal (1) 1.png'),
+      image: getImagePath('/houseforyou/michal (1) 1.png'),
     },
   ];
 

@@ -72,7 +72,7 @@ export const BuildingStepsSection: React.FC = () => {
             <div 
               className="w-full h-96 bg-gray-300 rounded-lg"
               style={{
-                backgroundImage: `url('${getImagePath('/Zrzut ekranu 2025-03-13 o 13.57.05.png')}')`,
+                backgroundImage: `url('${getImagePath('/houseforyou/Zrzut ekranu 2025-03-13 o 13.57.05.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 maxWidth: '583px',

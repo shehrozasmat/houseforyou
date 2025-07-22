@@ -7,7 +7,7 @@ export const HeroSection: React.FC = () => {
       <div 
         className="absolute inset-0"
         style={{
-          backgroundImage: `linear-gradient(0deg, rgba(33, 26, 26, 0.84), rgba(33, 26, 26, 0.84)), url('${getImagePath('/Header background.png')}')`,
+          backgroundImage: `linear-gradient(0deg, rgba(33, 26, 26, 0.84), rgba(33, 26, 26, 0.84)), url('${getImagePath('/houseforyou/Header background.png')}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
