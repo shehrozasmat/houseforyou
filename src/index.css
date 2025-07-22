@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background: #FFFFFF;
+  color: #082924;
+  line-height: 1.5;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base container utility classes that might be used */
+.main-container {
+  width: 100%;
+  max-width: 2820px;
+  margin: 0 auto;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 1660px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Interactive Effects and Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button Hover Effects */
+.btn {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-warning:hover {
+  background-color: #FFA74E !important;
+  color: #FFFFFF !important;
+  border-color: #FFA74E !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 167, 78, 0.3);
+}
+
+/* Card Hover Effects */
+.card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Navigation Effects */
+.navbar-nav .nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FFA74E !important;
+  transform: translateY(-1px);
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: #FFA74E;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Image Hover Effects */
+.gallery-image-hover {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.gallery-image-hover:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Stats Animation */
+.stat-number {
+  opacity: 0;
+  transform: scale(0.5);
+  animation: popIn 0.6s ease-out forwards;
+}
+
+@keyframes popIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Step Box Hover Effects */
+.step-box {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.step-box:hover {
+  transform: scale(1.1);
+  background-color: #FFA74E !important;
+  color: #FFFFFF !important;
+  border-color: #FFA74E !important;
+}
+
+/* Testimonial Hover Effects */
+.testimonial-card {
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Link Hover Effects */
+.interactive-link {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.interactive-link:hover {
+  color: #FFA74E !important;
+  transform: translateX(5px);
+}
+
+.interactive-link svg {
+  transition: all 0.3s ease;
+}
+
+.interactive-link:hover svg {
+  transform: translateX(3px);
+}
+
+/* Section Animations */
+.section-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.section-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero Text Animation */
+.hero-title {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: heroTextAppear 0.8s ease-out 0.3s forwards;
+}
+
+.hero-subtitle {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: heroTextAppear 0.8s ease-out 0.6s forwards;
+}
+
+.hero-button {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: heroTextAppear 0.8s ease-out 0.9s forwards;
+}
+
+@keyframes heroTextAppear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulse Animation for CTA Buttons */
+.pulse-button {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 167, 78, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 167, 78, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 167, 78, 0);
+  }
+}
+
+/* Loading Animation */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #FFA74E;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Utility classes for consistent styling */
+.more-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
+  transition: all 0.3s ease;
+}
+
+.more-link:hover {
+  transform: translateX(5px);
+}
+
+.more-border {
+  width: 3px;
+  height: 24px;
+  background: #9DADAB;
+  transition: all 0.3s ease;
+}
+
+.more-link:hover .more-border {
+  background: #FFA74E;
+}
+
+.more-text {
+  font-family: 'Manrope';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6C8581;
+  transition: all 0.3s ease;
+}
+
+.more-link:hover .more-text {
+  color: #FFA74E;
+}
+
+/* Button styles that components might reference */
+.main-button {
+  border: 2px solid #FFA74E;
+  background: transparent;
+  color: #0A332D;
+  font-family: 'Manrope';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 24px 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 72px;
+  transition: all 0.3s ease;
+}
+
+.main-button:hover {
+  background-color: #FFA74E;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 167, 78, 0.3);
+}
+
+.hero-button {
+  border: 2px solid #FFA74E;
+  background: transparent;
+  color: #FFA74E;
+  font-family: 'Manrope';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 24px 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 320px;
+  height: 72px;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #FFA74E;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 167, 78, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .content-container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    padding: 0 20px;
+  }
+  
+  /* Reduce animation intensity on mobile */
+  .card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+}
+
+/* Print styles */
+@media print {
+  .btn:hover,
+  .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
