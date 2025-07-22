@@ -1,21 +1,22 @@
 import React from 'react';
+import { getImagePath } from '../utils/imagePath';
 
 export const StatsSection: React.FC = () => {
   const testimonials = [
     {
       name: 'Anna',
       text: 'Chcę wyrazić swoje podziękowania',
-      image: '/Zbyszek.png',
+      image: getImagePath('/Zbyszek.png'),
     },
     {
       name: 'Zbyszek', 
       text: 'Chcę wyrazić swoje podziękowania',
-      image: '/Zbyszek.png',
+      image: getImagePath('/Zbyszek.png'),
     },
     {
       name: 'Robert',
       text: 'Chcę wyrazić swoje podziękowania', 
-      image: '/michal (1) 1.png',
+      image: getImagePath('/michal (1) 1.png'),
     },
   ];
 
