@@ -1,22 +1,16 @@
 {
   "name": "houseforyou",
-  "private": false,
-  "version": "1.0.0",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "homepage": "https://yourusername.github.io/houseforyou",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yourusername/houseforyou.git"
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "deploy-manual": "npm run build && gh-pages -d dist",
-    "type-check": "tsc --noEmit"
+    "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
