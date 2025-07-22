@@ -26,7 +26,7 @@ export const HeroSection: React.FC = () => {
               textAlign: 'center',
             }}
           >
-            Budujemy Twoje marzenia
+            Budujemy Twoje marzenia test
           </h1>
 
           <p 
