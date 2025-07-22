@@ -4,8 +4,9 @@ export const getImagePath = (path: string): string => {
   
   // Check if we're in production environment
   // For GitHub Pages, we always need the /houseforyou prefix in production
-  const isProduction = import.meta.env.PROD || import.meta.env.MODE === 'production' || !import.meta.env.DEV;
-  const basePath = isProduction ? '/houseforyou' : '';
+ // const isProduction = import.meta.env.PROD || import.meta.env.MODE === 'production' || !import.meta.env.DEV;
+ // const basePath = isProduction ? '/houseforyou' : '';
+  const basePath = '/houseforyou';
   
   return `${basePath}/${cleanPath}`;
 };
