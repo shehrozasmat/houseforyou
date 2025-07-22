@@ -9,13 +9,13 @@ export const TestimonialsSection: React.FC = () => {
           <div className="col-lg-8 mx-auto text-center mb-5">
             <h2 
               className="display-5 fw-bold mb-4" 
-              style={{fontFamily: 'Manrope', color: '#103D36'}}
+              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '3rem', fontWeight: 800}}
             >
               Co mówią nasi klienci
             </h2>
             <p 
               className="lead fw-bold" 
-              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.125rem'}}
+              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.125rem', fontWeight: 500}}
             >
               Opinie zadowolonych właścicieli domów wybudowanych przez House-4-You
             </p>
@@ -104,7 +104,7 @@ export const TestimonialsSection: React.FC = () => {
           <div className="col-12 text-center">
             <div className="d-flex justify-content-center gap-2">
               <div className="rounded-circle" style={{width: '12px', height: '12px', backgroundColor: '#E5E5E5'}}></div>
-              <div className="rounded-circle" style={{width: '12px', height: '12px', backgroundColor: '#4CAF50'}}></div>
+              <div className="rounded-circle" style={{width: '12px', height: '12px', backgroundColor: '#FFA74E'}}></div>
               <div className="rounded-circle" style={{width: '12px', height: '12px', backgroundColor: '#E5E5E5'}}></div>
             </div>
           </div>

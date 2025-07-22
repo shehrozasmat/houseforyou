@@ -2,12 +2,12 @@ import React from 'react';
 
 export const Footer: React.FC = () => {
   const navItems = [
-    { label: 'Strona główna', href: '/' },
-    { label: 'O nas', href: '/o-nas' },
-    { label: 'Realizacje', href: '/realizacje' },
-    { label: 'Opinie', href: '/opinie' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'Kontakt', href: '/kontakt' },
+    { label: 'STRONA GŁÓWNA', href: '/' },
+    { label: 'O NAS', href: '/o-nas' },
+    { label: 'REALIZACJE', href: '/realizacje' },
+    { label: 'OPINIE', href: '/opinie' },
+    { label: 'BLOG', href: '/blog' },
+    { label: 'KONTAKT', href: '/kontakt' },
   ];
 
   return (
@@ -15,14 +15,16 @@ export const Footer: React.FC = () => {
       <div className="container text-center">
         <div className="mb-5">
           <h3 
-            className="fw-bold mb-0" 
+            className="fw-bold mb-0 d-flex align-items-center justify-content-center" 
             style={{
               fontFamily: 'Manrope', 
               color: '#0A332D', 
               fontSize: '1.5rem'
             }}
           >
-            House-4-You
+            <span style={{color: '#0A332D'}}>HOUSE</span>
+            <span style={{color: '#FFA74E', marginLeft: '2px'}}>4</span>
+            <span style={{color: '#0A332D', marginLeft: '2px'}}>YOU</span>
           </h3>
         </div>
 

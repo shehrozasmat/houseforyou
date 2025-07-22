@@ -10,14 +10,14 @@ export const GallerySection: React.FC = () => {
           <div className="col-lg-8 mx-auto text-center mb-5">
             <h2 
               className="display-6 fw-bold mb-4" 
-              style={{fontFamily: 'Manrope', color: '#0A332D'}}
+              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '3rem', fontWeight: 800}}
             >
               Na przestrzeni 30 lat zmieniły się trendy, jednak to, co pozostało niezmienne, 
               to jakość wybudowanych przez nas domów
             </h2>
             <p 
               className="lead fw-bold mb-4" 
-              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.125rem'}}
+              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.125rem', fontWeight: 500, lineHeight: '1.6'}}
             >
               Firma budowlana House-4-You to dobre rozwiązanie dla Twojej inwestycji budowy domu. 
               Z nami zrealizujesz marzenie o własnym domu lub funkcjonalnym biurze od A do Z.
@@ -107,8 +107,11 @@ export const GallerySection: React.FC = () => {
               variant="outlined"
               size="large"
               style={{
-                borderColor: '#4CAF50',
-                color: '#0A332D'
+                borderColor: '#FFA74E',
+                color: '#0A332D',
+                fontWeight: 600,
+                fontSize: '1rem',
+                padding: '12px 32px'
               }}
             >
               Zobacz dowody na naszą rzetelność

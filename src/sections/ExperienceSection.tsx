@@ -10,13 +10,13 @@ export const ExperienceSection: React.FC = () => {
           <div className="col-lg-8 mx-auto text-center mb-5">
             <h2 
               className="display-4 fw-bold mb-4" 
-              style={{fontFamily: 'Manrope', color: '#0A332D'}}
+              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '3rem', fontWeight: 800}}
             >
               30 lat doświadczeń
             </h2>
             <p 
               className="lead fw-bold mb-4" 
-              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.125rem'}}
+              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.125rem', fontWeight: 500, lineHeight: '1.6'}}
             >
               Od ponad 30 lat zajmujemy się budową domów, zdobywając cenne doświadczenie w realizacji inwestycji. 
               Jednym z najtrudniejszych okresów był rok 2007, kiedy krach na światowych giełdach spowodował gwałtowny wzrost cen materiałów budowlanych. 
@@ -32,8 +32,11 @@ export const ExperienceSection: React.FC = () => {
               variant="outlined"
               size="large"
               style={{
-                borderColor: '#4CAF50',
-                color: '#0A332D'
+                borderColor: '#FFA74E',
+                color: '#0A332D',
+                fontWeight: 600,
+                fontSize: '1rem',
+                padding: '12px 32px'
               }}
             >
               Zobacz dowody na naszą rzetelność
