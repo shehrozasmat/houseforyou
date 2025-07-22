@@ -104,7 +104,7 @@ export const TestimonialsSection: React.FC = () => {
           <div className="col-12 text-center">
             <div className="d-flex justify-content-center gap-2">
               <div className="rounded-circle" style={{width: '12px', height: '12px', backgroundColor: '#E5E5E5'}}></div>
-              <div className="rounded-circle" style={{width: '12px', height: '12px', backgroundColor: '#FFA74E'}}></div>
+              <div className="rounded-circle" style={{width: '12px', height: '12px', backgroundColor: '#4CAF50'}}></div>
               <div className="rounded-circle" style={{width: '12px', height: '12px', backgroundColor: '#E5E5E5'}}></div>
             </div>
           </div>

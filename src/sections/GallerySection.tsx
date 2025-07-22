@@ -107,7 +107,7 @@ export const GallerySection: React.FC = () => {
               variant="outlined"
               size="large"
               style={{
-                borderColor: '#FFA74E',
+                borderColor: '#4CAF50',
                 color: '#0A332D'
               }}
             >

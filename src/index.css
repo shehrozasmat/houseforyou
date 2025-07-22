@@ -63,11 +63,11 @@ html {
 }
 
 .btn-outline-warning:hover {
-  background-color: #FFA74E !important;
+  background-color: #4CAF50 !important;
   color: #FFFFFF !important;
-  border-color: #FFA74E !important;
+  border-color: #4CAF50 !important;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 167, 78, 0.3);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
 }
 
 /* Card Hover Effects */
@@ -85,27 +85,12 @@ html {
 .navbar-nav .nav-link {
   position: relative;
   transition: all 0.3s ease;
+  color: #FFFFFF !important;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #FFA74E !important;
-  transform: translateY(-1px);
-}
-
-.navbar-nav .nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 50%;
-  background-color: #FFA74E;
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
-}
-
-.navbar-nav .nav-link:hover::after {
-  width: 100%;
+  color: #4CAF50 !important;
+  transform: none;
 }
 
 /* Image Hover Effects */
@@ -141,9 +126,9 @@ html {
 
 .step-box:hover {
   transform: scale(1.1);
-  background-color: #FFA74E !important;
+  background-color: #4CAF50 !important;
   color: #FFFFFF !important;
-  border-color: #FFA74E !important;
+  border-color: #4CAF50 !important;
 }
 
 /* Testimonial Hover Effects */
@@ -163,7 +148,7 @@ html {
 }
 
 .interactive-link:hover {
-  color: #FFA74E !important;
+  color: #4CAF50 !important;
   transform: translateX(5px);
 }
 
@@ -220,13 +205,13 @@ html {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 167, 78, 0.4);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4);
   }
   70% {
-    box-shadow: 0 0 0 10px rgba(255, 167, 78, 0);
+    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 167, 78, 0);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
   }
 }
 

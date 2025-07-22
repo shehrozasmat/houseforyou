@@ -45,7 +45,7 @@ export const BuildingStepsSection: React.FC = () => {
                   </span>
                 </div>
                 <div className="d-flex align-items-center justify-content-center my-3">
-                  <svg width="20" height="20" fill="#FFA74E" viewBox="0 0 24 24">
+                  <svg width="20" height="20" fill="#4CAF50" viewBox="0 0 24 24">
                     <path d="M12 16l-6-6h12z"/>
                   </svg>
                 </div>
@@ -63,7 +63,7 @@ export const BuildingStepsSection: React.FC = () => {
                   </span>
                 </div>
                 <div className="d-flex align-items-center justify-content-center my-3">
-                  <svg width="20" height="20" fill="#FFA74E" viewBox="0 0 24 24">
+                  <svg width="20" height="20" fill="#4CAF50" viewBox="0 0 24 24">
                     <path d="M12 16l-6-6h12z"/>
                   </svg>
                 </div>
@@ -81,7 +81,7 @@ export const BuildingStepsSection: React.FC = () => {
                   </span>
                 </div>
                 <div className="d-flex align-items-center justify-content-center my-3">
-                  <svg width="20" height="20" fill="#FFA74E" viewBox="0 0 24 24">
+                  <svg width="20" height="20" fill="#4CAF50" viewBox="0 0 24 24">
                     <path d="M12 16l-6-6h12z"/>
                   </svg>
                 </div>
@@ -139,7 +139,7 @@ export const BuildingStepsSection: React.FC = () => {
                   }}
                 >
                   Poznaj korzyści
-                  <svg width="16" height="16" fill="#FFA74E" viewBox="0 0 24 24" className="ms-2">
+                  <svg width="16" height="16" fill="#4CAF50" viewBox="0 0 24 24" className="ms-2">
                     <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
                   </svg>
                 </button>
@@ -159,7 +159,7 @@ export const BuildingStepsSection: React.FC = () => {
                   }}
                 >
                   Przeglądaj projekty
-                  <svg width="16" height="16" fill="#FFA74E" viewBox="0 0 24 24" className="ms-2">
+                  <svg width="16" height="16" fill="#4CAF50" viewBox="0 0 24 24" className="ms-2">
                     <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
                   </svg>
                 </button>

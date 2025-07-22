@@ -7,38 +7,54 @@ export const HeroSection: React.FC = () => {
     <section 
       className="position-relative vh-100 d-flex align-items-center" 
       style={{
-        backgroundImage: `linear-gradient(0deg, rgba(33, 26, 26, 0.84), rgba(33, 26, 26, 0.84)), url('${getImagePath('/header-background.png')}')`,
+        backgroundImage: `linear-gradient(0deg, rgba(33, 26, 26, 0.84), rgba(33, 26, 26, 0.84)), url('${getImagePath('/tea-room-design.jpg')}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
     >
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-lg-8 text-center text-white">
+          <div className="col-lg-10 text-center text-white">
             <h1 
               className="display-2 fw-bold mb-4 hero-title" 
-              style={{fontFamily: 'Manrope', fontSize: '4rem'}}
+              style={{fontFamily: 'Manrope', fontSize: '3.5rem', lineHeight: '1.2'}}
             >
-              Budujemy Twoje marzenia test new
+              Pozwól nam zbudować <span style={{color: '#FFA74E'}}>dla Ciebie Dom.</span>
             </h1>
             <p 
               className="lead mb-5 hero-subtitle" 
-              style={{fontFamily: 'Manrope', fontSize: '1.125rem', fontWeight: 500}}
+              style={{fontFamily: 'Manrope', fontSize: '1.5rem', fontWeight: 400}}
             >
-              Ponad 30 lat doświadczenia w budowie domów jednorodzinnych. Kompleksowa realizacja od projektu do wykończenia.
+              Miejsce, gdzie poczujesz się naprawdę dobrze.
             </p>
-            <Button 
-              variant="ghost"
-              size="large"
-              className="pulse-button"
-              style={{
-                borderColor: '#FFA74E',
-                color: '#FFA74E',
-                minWidth: '320px'
-              }}
-            >
-              Zobacz zrealizowane domy
-            </Button>
+            <div className="d-flex justify-content-center gap-4 flex-wrap">
+              <Button 
+                variant="filled"
+                size="large"
+                style={{
+                  backgroundColor: '#0A5D57',
+                  borderColor: '#0A5D57',
+                  color: '#FFA74E',
+                  minWidth: '280px',
+                  fontWeight: 600
+                }}
+              >
+                Oblicz koszty budowy domu
+              </Button>
+              <Button 
+                variant="filled"
+                size="large"
+                style={{
+                  backgroundColor: '#FFA74E',
+                  borderColor: '#FFA74E',
+                  color: '#FFFFFF',
+                  minWidth: '280px',
+                  fontWeight: 600
+                }}
+              >
+                Znajdź projekt domu z wyceną
+              </Button>
+            </div>
           </div>
         </div>
       </div>

@@ -8,13 +8,13 @@ export const StatsSection: React.FC = () => {
           <div className="col-lg-8 mx-auto text-center mb-5">
             <h2 
               className="display-5 fw-bold mb-4" 
-              style={{fontFamily: 'Manrope', color: '#103D36'}}
+              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '3rem', fontWeight: 800}}
             >
               Budowa domu, krok po kroku
             </h2>
             <p 
               className="lead fw-bold" 
-              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.125rem'}}
+              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.125rem', fontWeight: 500, lineHeight: '1.6'}}
             >
               Posiadając ponad 30 lat doświadczenia w budowie domów jednorodzinnych oraz budynków biurowych, 
               zrealizowaliśmy ponad 2500 projektów. Każdy obiekt to unikalna historia, a nasza praca opiera się 
@@ -27,21 +27,16 @@ export const StatsSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row justify-content-center">
           <div className="col-6 col-md-3 mb-4">
-            <div 
-              className="text-center p-4 rounded shadow-sm fade-in" 
-              style={{background: 'linear-gradient(0.71deg, rgba(255, 255, 255, 0.8) 12.97%, rgba(255, 242, 225, 0.64) 75.22%, rgba(255, 251, 248, 0.8) 88.39%)'}}
-            >
+            <div className="text-center">
               <div 
                 className="display-3 fw-bold mb-2 stat-number" 
                 style={{
                   fontFamily: 'Manrope',
                   fontSize: '4rem',
-                  background: 'linear-gradient(180deg, #0D3831 0%, #115C50 31.73%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
+                  color: '#0A332D',
+                  fontWeight: 800
                 }}
               >
                 150+
@@ -55,19 +50,14 @@ export const StatsSection: React.FC = () => {
             </div>
           </div>
           <div className="col-6 col-md-3 mb-4">
-            <div 
-              className="text-center p-4 rounded shadow-sm fade-in" 
-              style={{background: 'linear-gradient(0.71deg, rgba(255, 255, 255, 0.8) 12.97%, rgba(255, 242, 225, 0.64) 75.22%, rgba(255, 251, 248, 0.8) 88.39%)'}}
-            >
+            <div className="text-center">
               <div 
                 className="display-3 fw-bold mb-2 stat-number" 
                 style={{
                   fontFamily: 'Manrope',
                   fontSize: '4rem',
-                  background: 'linear-gradient(180deg, #0D3831 0%, #115C50 31.73%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
+                  color: '#0A332D',
+                  fontWeight: 800
                 }}
               >
                 30
@@ -81,19 +71,14 @@ export const StatsSection: React.FC = () => {
             </div>
           </div>
           <div className="col-6 col-md-3 mb-4">
-            <div 
-              className="text-center p-4 rounded shadow-sm fade-in" 
-              style={{background: 'linear-gradient(0.71deg, rgba(255, 255, 255, 0.8) 12.97%, rgba(255, 242, 225, 0.64) 75.22%, rgba(255, 251, 248, 0.8) 88.39%)'}}
-            >
+            <div className="text-center">
               <div 
                 className="display-3 fw-bold mb-2 stat-number" 
                 style={{
                   fontFamily: 'Manrope',
                   fontSize: '4rem',
-                  background: 'linear-gradient(180deg, #0D3831 0%, #115C50 31.73%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
+                  color: '#0A332D',
+                  fontWeight: 800
                 }}
               >
                 10
@@ -107,19 +92,14 @@ export const StatsSection: React.FC = () => {
             </div>
           </div>
           <div className="col-6 col-md-3 mb-4">
-            <div 
-              className="text-center p-4 rounded shadow-sm fade-in" 
-              style={{background: 'linear-gradient(0.71deg, rgba(255, 255, 255, 0.8) 12.97%, rgba(255, 242, 225, 0.64) 75.22%, rgba(255, 251, 248, 0.8) 88.39%)'}}
-            >
+            <div className="text-center">
               <div 
                 className="display-3 fw-bold mb-2 stat-number" 
                 style={{
                   fontFamily: 'Manrope',
                   fontSize: '4rem',
-                  background: 'linear-gradient(180deg, #0D3831 0%, #115C50 31.73%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
+                  color: '#0A332D',
+                  fontWeight: 800
                 }}
               >
                 30+

@@ -23,13 +23,13 @@ export const ContactSection: React.FC = () => {
             <div className="mb-5">
               <h2 
                 className="h3 mb-3" 
-                style={{fontFamily: 'Manrope', color: '#FFA74E', fontWeight: 400}}
+                style={{fontFamily: 'Manrope', color: '#4CAF50', fontWeight: 400}}
               >
                 Nie przekonaliśmy Cię?
               </h2>
               <h3 
                 className="h3 fw-bold" 
-                style={{fontFamily: 'Manrope', color: '#FFA74E'}}
+                style={{fontFamily: 'Manrope', color: '#4CAF50'}}
               >
                 Napisz i umów się na rozmowę
               </h3>
@@ -41,7 +41,7 @@ export const ContactSection: React.FC = () => {
               style={{
                 background: 'linear-gradient(90deg, rgba(13, 56, 49, 0.95) 0%, rgba(38, 116, 102, 0) 100%), rgba(15, 66, 58, 0.9)',
                 border: '2px solid #244641',
-                color: '#FFA74E',
+                color: '#4CAF50',
                 minWidth: '392px'
               }}
             >

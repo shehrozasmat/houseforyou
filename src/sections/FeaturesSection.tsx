@@ -1,107 +1,97 @@
 import React from 'react';
-import { getImagePath } from '../utils/imagePath';
-import { Button } from '../components/ui/Button';
 
 export const FeaturesSection: React.FC = () => {
   return (
-    <section className="py-5" style={{background: 'linear-gradient(180deg, rgba(157, 173, 171, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%)'}}>
+    <section className="py-5 bg-white">
       <div className="container">
-        <div className="row align-items-center mb-5">
-          <div className="col-lg-6">
+        <div className="row">
+          <div className="col-lg-8 mx-auto text-center mb-5">
             <h2 
-              className="display-5 fw-bold mb-4" 
-              style={{fontFamily: 'Manrope', color: '#0A332D'}}
+              className="display-5 fw-bold mb-3" 
+              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '3rem', fontWeight: 800}}
             >
-              Zbuduj z nami swój dom
+              Dlaczego warto nam zaufać?
             </h2>
             <p 
-              className="lead fw-bold mb-4" 
-              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.125rem'}}
+              className="fs-4 fw-semibold mb-4" 
+              style={{fontFamily: 'Manrope', color: '#6C8581', fontSize: '1.25rem', fontWeight: 400}}
             >
-              Firma House-4-You oferuje kompleksowe usługi budowlane, od dokumentów, pozwoleń, fundamentu, 
-              przez stan surowy, deweloperski, prace pod klucz, zagospodarowanie terenu i ogród. Dbamy o każdy detal budowy. 
-              Jakość potwierdzamy 10-cio letnią gwarancją. Z nami Twoje marzenie o budowie domu stanie się rzeczywistością.
+              Stoją za nami lata doświadczeń
             </p>
-            <div className="d-flex align-items-center mb-4">
+            
+            <div className="row mb-4">
+              <div className="col-lg-8 mx-auto">
+                <p 
+                  className="mb-3" 
+                  style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1rem', fontWeight: 400, lineHeight: '1.6'}}
+                >
+                  Firma House-4-You oferuje kompleksowe usługi budowlane, od dokumentów, pozwoleń, 
+                  fundamentu, przez stan surowy, deweloperski, prace pod klucz, zagospodarowanie terenu 
+                  i ogród.
+                </p>
+                <p 
+                  className="mb-4" 
+                  style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1rem', fontWeight: 400, lineHeight: '1.6'}}
+                >
+                  Dbamy o każdy detal budowy. Jakość potwierdzamy 10-cio letnią gwarancją. 
+                  Z nami Twoje marzenie o budowie domu stanie się rzeczywistością.
+                </p>
+              </div>
+            </div>
+
+            <div className="d-flex align-items-center justify-content-center mb-5">
               <div style={{width: '3px', height: '24px', backgroundColor: '#9DADAB'}} className="me-2"></div>
               <span className="fw-bold" style={{fontFamily: 'Manrope', color: '#6C8581'}}>więcej</span>
             </div>
-            <Button 
-              variant="outlined"
-              size="large"
-              style={{
-                borderColor: '#FFA74E',
-                color: '#0A332D'
-              }}
-            >
-              Przeglądaj projekty
-            </Button>
-          </div>
-          <div className="col-lg-6">
-            <div 
-              className="rounded gallery-image-hover" 
-              style={{
-                backgroundImage: `url('${getImagePath('/promo-banner-desktop.png')}')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                height: '400px'
-              }}
-            ></div>
           </div>
         </div>
 
-        <div className="row">
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm h-100 p-4 text-center">
-              <div className="card-body">
+        <div className="row justify-content-center">
+          <div className="col-md-5 mb-4">
+            <div className="card shadow-sm h-100 p-4" style={{border: 'none', borderRadius: '8px'}}>
+              <div className="card-body text-center">
                 <h5 
-                  className="card-title fw-bold mb-4" 
-                  style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '2rem'}}
+                  className="card-title fw-bold mb-3" 
+                  style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.5rem', fontWeight: 700}}
                 >
-                  Kompleksowość
+                  Oblicz koszty budowy domu
                 </h5>
                 <p 
-                  className="card-text" 
-                  style={{fontFamily: 'Manrope', color: '#000000', fontSize: '1.125rem'}}
+                  className="card-text mb-4" 
+                  style={{fontFamily: 'Manrope', color: '#6C8581', fontSize: '0.9rem'}}
                 >
-                  Budową domów, budynków biurowych zajmujemy się kompleksowo, od a do z. Możemy pomóc w znalezieniu działki,...
+                  Skorzystaj z kalkulatora
                 </p>
+                <div 
+                  className="p-3 rounded fw-bold" 
+                  style={{backgroundColor: '#FFA74E', color: '#FFFFFF', fontFamily: 'Manrope', fontSize: '1rem'}}
+                >
+                  Metraż domu 200-250m2
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm h-100 p-4 text-center">
-              <div className="card-body">
+          <div className="col-md-5 mb-4">
+            <div className="card shadow-sm h-100 p-4" style={{border: 'none', borderRadius: '8px'}}>
+              <div className="card-body text-center">
                 <h5 
-                  className="card-title fw-bold mb-4" 
-                  style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '2rem'}}
+                  className="card-title fw-bold mb-3" 
+                  style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.5rem', fontWeight: 700}}
                 >
-                  Doświadczenie
+                  Nie wiesz od czego zacząć?
                 </h5>
                 <p 
-                  className="card-text" 
-                  style={{fontFamily: 'Manrope', color: '#000000', fontSize: '1.125rem'}}
+                  className="card-text mb-4" 
+                  style={{fontFamily: 'Manrope', color: '#6C8581', fontSize: '0.9rem'}}
                 >
-                  Budową domów, budynków biurowych zajmujemy się kompleksowo, od a do z. Możemy pomóc w znalezieniu działki,...
+                  Skontaktuj się z nami, pomożemy Ci zrobić pierwszy krok
                 </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm h-100 p-4 text-center">
-              <div className="card-body">
-                <h5 
-                  className="card-title fw-bold mb-4" 
-                  style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '2rem'}}
+                <div 
+                  className="p-3 rounded fw-bold" 
+                  style={{backgroundColor: '#CED6D5', color: '#0A332D', fontFamily: 'Manrope', fontSize: '1rem'}}
                 >
-                  Gwarancja 10 lat
-                </h5>
-                <p 
-                  className="card-text" 
-                  style={{fontFamily: 'Manrope', color: '#000000', fontSize: '1.125rem'}}
-                >
-                  Budową domów, budynków biurowych zajmujemy się kompleksowo, od a do z. Możemy pomóc w znalezieniu działki,...
-                </p>
+                  telefon: 606 730 239
+                </div>
               </div>
             </div>
           </div>

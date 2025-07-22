@@ -2,19 +2,21 @@ import React from 'react';
 
 export const Header: React.FC = () => {
   const navItems = [
-    { label: 'Strona główna', href: '/' },
-    { label: 'O nas', href: '/o-nas' },
-    { label: 'Realizacje', href: '/realizacje' },
-    { label: 'Opinie', href: '/opinie' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'Kontakt', href: '/kontakt' },
+    { label: 'STRONA GŁÓWNA', href: '/' },
+    { label: 'O NAS', href: '/o-nas' },
+    { label: 'REALIZACJE', href: '/realizacje' },
+    { label: 'OPINIE', href: '/opinie' },
+    { label: 'BLOG', href: '/blog' },
+    { label: 'KONTAKT', href: '/kontakt' },
   ];
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark position-absolute w-100" style={{zIndex: 1050}}>
       <div className="container-fluid px-5">
-        <a className="navbar-brand fw-bold fs-4" href="#" style={{fontFamily: 'Manrope'}}>
-          House-4-You
+        <a className="navbar-brand fw-bold fs-4 d-flex align-items-center" href="#" style={{fontFamily: 'Manrope'}}>
+          <span style={{color: '#FFFFFF'}}>HOUSE</span>
+          <span style={{color: '#FFA74E', marginLeft: '2px'}}>4</span>
+          <span style={{color: '#FFFFFF', marginLeft: '2px'}}>YOU</span>
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
