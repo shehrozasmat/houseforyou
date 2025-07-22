@@ -74,8 +74,9 @@ houseforyou/
 ### Prerequisites
 - Node.js 18.0+ 
 - npm or yarn
+- Git for version control
 
-### Installation
+### Local Development
 
 1. **Clone the repository:**
    ```bash
@@ -107,6 +108,27 @@ npm run build
 # Preview production build
 npm run preview
 ```
+
+### 🌐 Deploy to GitHub Pages
+
+The project is **ready for GitHub Pages deployment**! 
+
+#### Quick Deploy Steps:
+1. **Create GitHub repository** (public)
+2. **Push code** to GitHub
+3. **Enable GitHub Pages** with GitHub Actions in repository settings
+4. **Automatic deployment** on every push to main branch
+
+#### Detailed Instructions:
+See **[DEPLOYMENT.md](./DEPLOYMENT.md)** for complete step-by-step guide.
+
+#### Manual Deployment:
+```bash
+npm run predeploy  # Builds the project
+npm run deploy     # Deploys to GitHub Pages
+```
+
+Your site will be live at: `https://yourusername.github.io/houseforyou`
 
 ## 🎨 Design System
 
