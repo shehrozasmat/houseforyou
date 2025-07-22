@@ -21,7 +21,7 @@ export const BuildingStepsSection: React.FC = () => {
             <div 
               className="rounded gallery-image-hover" 
               style={{
-                backgroundImage: `url('${getImagePath('/Zrzut ekranu 2025-03-13 o 13.57.05.png')}')`,
+                backgroundImage: `url('${getImagePath('/building-steps-hero.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 width: '100%',

@@ -7,7 +7,7 @@ export const HeroSection: React.FC = () => {
     <section 
       className="position-relative vh-100 d-flex align-items-center" 
       style={{
-        backgroundImage: `linear-gradient(0deg, rgba(33, 26, 26, 0.84), rgba(33, 26, 26, 0.84)), url('${getImagePath('/Header background.png')}')`,
+        backgroundImage: `linear-gradient(0deg, rgba(33, 26, 26, 0.84), rgba(33, 26, 26, 0.84)), url('${getImagePath('/header-background.png')}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}

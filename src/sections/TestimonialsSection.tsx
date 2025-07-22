@@ -28,7 +28,7 @@ export const TestimonialsSection: React.FC = () => {
               <div 
                 className="rounded-circle mx-auto mb-3 gallery-image-hover" 
                 style={{
-                  backgroundImage: `url('${getImagePath('/Zbyszek.png')}')`,
+                  backgroundImage: `url('${getImagePath('/testimonial-zbyszek.png')}')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   width: '128px',
@@ -53,7 +53,7 @@ export const TestimonialsSection: React.FC = () => {
               <div 
                 className="rounded-circle mx-auto mb-3 gallery-image-hover" 
                 style={{
-                  backgroundImage: `url('${getImagePath('/Zbyszek.png')}')`,
+                  backgroundImage: `url('${getImagePath('/testimonial-zbyszek.png')}')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   width: '128px',
@@ -78,7 +78,7 @@ export const TestimonialsSection: React.FC = () => {
               <div 
                 className="rounded-circle mx-auto mb-3 gallery-image-hover" 
                 style={{
-                  backgroundImage: `url('${getImagePath('/michal (1) 1.png')}')`,
+                  backgroundImage: `url('${getImagePath('/testimonial-michal.png')}')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   width: '128px',

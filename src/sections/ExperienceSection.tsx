@@ -48,7 +48,7 @@ export const ExperienceSection: React.FC = () => {
             <div 
               className="rounded" 
               style={{
-                backgroundImage: `url('${getImagePath('/Rectangle 57.png')}')`,
+                backgroundImage: `url('${getImagePath('/experience-gallery-1.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '258px'
@@ -59,7 +59,7 @@ export const ExperienceSection: React.FC = () => {
             <div 
               className="rounded" 
               style={{
-                backgroundImage: `url('${getImagePath('/Rectangle 58.png')}')`,
+                backgroundImage: `url('${getImagePath('/experience-gallery-2.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '258px'
@@ -70,7 +70,7 @@ export const ExperienceSection: React.FC = () => {
             <div 
               className="rounded" 
               style={{
-                backgroundImage: `url('${getImagePath('/Rectangle 59.png')}')`,
+                backgroundImage: `url('${getImagePath('/experience-gallery-3.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '258px'
@@ -81,7 +81,7 @@ export const ExperienceSection: React.FC = () => {
             <div 
               className="rounded" 
               style={{
-                backgroundImage: `url('${getImagePath('/Rectangle 60.png')}')`,
+                backgroundImage: `url('${getImagePath('/experience-gallery-4.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '258px'
@@ -92,7 +92,7 @@ export const ExperienceSection: React.FC = () => {
             <div 
               className="rounded" 
               style={{
-                backgroundImage: `url('${getImagePath('/Rectangle 61.png')}')`,
+                backgroundImage: `url('${getImagePath('/experience-gallery-5.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '258px'
@@ -103,7 +103,7 @@ export const ExperienceSection: React.FC = () => {
             <div 
               className="rounded" 
               style={{
-                backgroundImage: `url('${getImagePath('/Rectangle 62.png')}')`,
+                backgroundImage: `url('${getImagePath('/experience-gallery-6.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '258px'

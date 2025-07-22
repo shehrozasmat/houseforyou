@@ -7,7 +7,7 @@ export const ContactSection: React.FC = () => {
     <section 
       className="position-relative py-5" 
       style={{
-        backgroundImage: `url('${getImagePath('/image contact form.png')}')`,
+        backgroundImage: `url('${getImagePath('/contact-form-background.png')}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}

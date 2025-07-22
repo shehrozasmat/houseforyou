@@ -41,7 +41,7 @@ export const FeaturesSection: React.FC = () => {
             <div 
               className="rounded gallery-image-hover" 
               style={{
-                backgroundImage: `url('${getImagePath('/promo banner desktop.png')}')`,
+                backgroundImage: `url('${getImagePath('/promo-banner-desktop.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '400px'

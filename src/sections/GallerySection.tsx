@@ -40,7 +40,7 @@ export const GallerySection: React.FC = () => {
             <div 
               className="rounded gallery-image-hover" 
               style={{
-                backgroundImage: `url('${getImagePath('/strzeniówka51 1.png')}')`,
+                backgroundImage: `url('${getImagePath('/project-strzeniowka.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '300px'
@@ -61,7 +61,7 @@ export const GallerySection: React.FC = () => {
             <div 
               className="rounded gallery-image-hover" 
               style={{
-                backgroundImage: `url('${getImagePath('/thumb2 1.png')}')`,
+                backgroundImage: `url('${getImagePath('/project-thumb2.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '300px'
@@ -82,7 +82,7 @@ export const GallerySection: React.FC = () => {
             <div 
               className="rounded gallery-image-hover" 
               style={{
-                backgroundImage: `url('${getImagePath('/ursus 1.png')}')`,
+                backgroundImage: `url('${getImagePath('/project-ursus.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '300px'
