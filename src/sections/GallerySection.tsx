@@ -3,12 +3,12 @@ import { getImagePath } from '../utils/imagePath';
 
 export const GallerySection: React.FC = () => {
   const projects = [
-    { image: getImagePath('/houseforyou/strzeniówka51 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: getImagePath('/houseforyou/thumb2 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: getImagePath('/houseforyou/ursus 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: getImagePath('/houseforyou/strzeniówka51 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: getImagePath('/houseforyou/thumb2 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: getImagePath('/houseforyou/ursus 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
+    { image: getImagePath('/strzeniówka51 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
+    { image: getImagePath('/thumb2 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
+    { image: getImagePath('/ursus 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
+    { image: getImagePath('/strzeniówka51 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
+    { image: getImagePath('/thumb2 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
+    { image: getImagePath('/ursus 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
   ];
 
   return (

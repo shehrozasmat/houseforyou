@@ -28,7 +28,7 @@ function App() {
       {/* Hero Section */}
       <section className="position-relative vh-100 d-flex align-items-center" 
         style={{
-          backgroundImage: `linear-gradient(0deg, rgba(33, 26, 26, 0.84), rgba(33, 26, 26, 0.84)), url('${getImagePath('/houseforyou/Header background.png')}')`,
+          backgroundImage: `linear-gradient(0deg, rgba(33, 26, 26, 0.84), rgba(33, 26, 26, 0.84)), url('${getImagePath('/Header background.png')}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}>
@@ -252,7 +252,7 @@ function App() {
             </div>
             <div className="col-lg-6">
               <div className="rounded gallery-image-hover" style={{
-                backgroundImage: `url('${getImagePath('/houseforyou/promo banner desktop.png')}')`,
+                backgroundImage: `url('${getImagePath('/promo banner desktop.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '400px'
@@ -316,7 +316,7 @@ function App() {
             {/* Left - Large House Image */}
             <div className="col-lg-5">
               <div className="rounded gallery-image-hover" style={{
-                backgroundImage: `url('${getImagePath('/houseforyou/Zrzut ekranu 2025-03-13 o 13.57.05.png')}')`,
+                backgroundImage: `url('${getImagePath('/Zrzut ekranu 2025-03-13 o 13.57.05.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 width: '100%',
@@ -440,7 +440,7 @@ function App() {
             <div className="col-md-4 mb-4">
               <div className="text-center testimonial-card">
                 <div className="rounded-circle mx-auto mb-3 gallery-image-hover" style={{
-                  backgroundImage: `url('${getImagePath('/houseforyou/Zbyszek.png')}')`,
+                  backgroundImage: `url('${getImagePath('/Zbyszek.png')}')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   width: '128px',
@@ -455,7 +455,7 @@ function App() {
             <div className="col-md-4 mb-4">
               <div className="text-center testimonial-card">
                 <div className="rounded-circle mx-auto mb-3 gallery-image-hover" style={{
-                  backgroundImage: `url('${getImagePath('/houseforyou/Zbyszek.png')}')`,
+                  backgroundImage: `url('${getImagePath('/Zbyszek.png')}')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   width: '128px',
@@ -470,7 +470,7 @@ function App() {
             <div className="col-md-4 mb-4">
               <div className="text-center testimonial-card">
                 <div className="rounded-circle mx-auto mb-3 gallery-image-hover" style={{
-                  backgroundImage: `url('${getImagePath('/houseforyou/michal (1) 1.png')}')`,
+                  backgroundImage: `url('${getImagePath('/michal (1) 1.png')}')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   width: '128px',
@@ -522,7 +522,7 @@ function App() {
           <div className="row mb-5">
             <div className="col-md-4 mb-4">
               <div className="rounded gallery-image-hover" style={{
-                backgroundImage: `url('${getImagePath('/houseforyou/strzeniówka51 1.png')}')`,
+                backgroundImage: `url('${getImagePath('/strzeniówka51 1.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '300px'
@@ -537,7 +537,7 @@ function App() {
             </div>
             <div className="col-md-4 mb-4">
               <div className="rounded gallery-image-hover" style={{
-                backgroundImage: `url('${getImagePath('/houseforyou/thumb2 1.png')}')`,
+                backgroundImage: `url('${getImagePath('/thumb2 1.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '300px'
@@ -552,7 +552,7 @@ function App() {
             </div>
             <div className="col-md-4 mb-4">
               <div className="rounded gallery-image-hover" style={{
-                backgroundImage: `url('${getImagePath('/houseforyou/ursus 1.png')}')`,
+                backgroundImage: `url('${getImagePath('/ursus 1.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '300px'
@@ -621,7 +621,7 @@ function App() {
           <div className="row g-1">
             <div className="col-2">
               <div className="rounded" style={{
-                backgroundImage: `url('${getImagePath('/houseforyou/Rectangle 57.png')}')`,
+                backgroundImage: `url('${getImagePath('/Rectangle 57.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '258px'
@@ -629,7 +629,7 @@ function App() {
             </div>
             <div className="col-2">
               <div className="rounded" style={{
-                backgroundImage: `url('${getImagePath('/houseforyou/Rectangle 58.png')}')`,
+                backgroundImage: `url('${getImagePath('/Rectangle 58.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '258px'
@@ -637,7 +637,7 @@ function App() {
             </div>
             <div className="col-2">
               <div className="rounded" style={{
-                backgroundImage: `url('${getImagePath('/houseforyou/Rectangle 59.png')}')`,
+                backgroundImage: `url('${getImagePath('/Rectangle 59.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '258px'
@@ -645,7 +645,7 @@ function App() {
             </div>
             <div className="col-2">
               <div className="rounded" style={{
-                backgroundImage: `url('${getImagePath('/houseforyou/Rectangle 60.png')}')`,
+                backgroundImage: `url('${getImagePath('/Rectangle 60.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '258px'
@@ -653,7 +653,7 @@ function App() {
             </div>
             <div className="col-2">
               <div className="rounded" style={{
-                backgroundImage: `url('${getImagePath('/houseforyou/Rectangle 61.png')}')`,
+                backgroundImage: `url('${getImagePath('/Rectangle 61.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '258px'
@@ -661,7 +661,7 @@ function App() {
             </div>
             <div className="col-2">
               <div className="rounded" style={{
-                backgroundImage: `url('${getImagePath('/houseforyou/Rectangle 62.png')}')`,
+                backgroundImage: `url('${getImagePath('/Rectangle 62.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '258px'
@@ -674,7 +674,7 @@ function App() {
       {/* Contact Section */}
       <section className="position-relative py-5" 
         style={{
-          backgroundImage: `url('${getImagePath('/houseforyou/image contact form.png')}')`,
+          backgroundImage: `url('${getImagePath('/image contact form.png')}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}>

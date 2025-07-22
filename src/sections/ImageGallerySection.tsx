@@ -3,12 +3,12 @@ import { getImagePath } from '../utils/imagePath';
 
 export const ImageGallerySection: React.FC = () => {
   const galleryImages = [
-    getImagePath('/houseforyou/Rectangle 57.png'),
-    getImagePath('/houseforyou/Rectangle 58.png'), 
-    getImagePath('/houseforyou/Rectangle 59.png'),
-    getImagePath('/houseforyou/Rectangle 60.png'),
-    getImagePath('/houseforyou/Rectangle 61.png'),
-    getImagePath('/houseforyou/Rectangle 62.png'),
+    getImagePath('/Rectangle 57.png'),
+    getImagePath('/Rectangle 58.png'), 
+    getImagePath('/Rectangle 59.png'),
+    getImagePath('/Rectangle 60.png'),
+    getImagePath('/Rectangle 61.png'),
+    getImagePath('/Rectangle 62.png'),
   ];
 
   return (

@@ -5,17 +5,17 @@ import { getImagePath } from '../utils/imagePath';
 export const BlogSection: React.FC = () => {
   const blogPosts = [
     {
-      image: getImagePath('/houseforyou/strzeniówka51 1.png'),
+      image: getImagePath('/strzeniówka51 1.png'),
       title: 'Warszawa',
       description: 'Realizacja na terenie Warszawy\nWykonawca: House-4-you',
     },
     {
-      image: getImagePath('/houseforyou/thumb2 1.png'), 
+      image: getImagePath('/thumb2 1.png'), 
       title: 'Warszawa',
       description: 'Realizacja na terenie Warszawy\nWykonawca: House-4-you',
     },
     {
-      image: getImagePath('/houseforyou/ursus 1.png'),
+      image: getImagePath('/ursus 1.png'),
       title: 'Warszawa', 
       description: 'Realizacja na terenie Warszawy\nWykonawca: House-4-you',
     },

@@ -11,7 +11,7 @@ export const AboutSection: React.FC = () => {
             <div 
               className="w-full h-96 lg:h-[658px] bg-gray-300 rounded-lg relative"
               style={{
-                backgroundImage: `url('${getImagePath('/houseforyou/image about.png')}')`,
+                backgroundImage: `url('${getImagePath('/image about.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
               }}
