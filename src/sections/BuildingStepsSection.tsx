@@ -1,155 +1,168 @@
 import React from 'react';
-import { Button } from '../components/ui/Button';
 import { getImagePath } from '../utils/imagePath';
 
 export const BuildingStepsSection: React.FC = () => {
-  const steps = [
-    'DZIAŁKA',
-    'PROJEKT', 
-    'BUDOWA',
-    'DETALE'
-  ];
-
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-5">
-
-        <div className="text-center mb-16">
-          <h2 
-            className="text-4xl md:text-5xl font-extrabold text-primary mb-8"
-            style={{
-              fontFamily: 'Manrope',
-              fontWeight: 800,
-              fontSize: '48px',
-              lineHeight: '66px',
-              color: '#0A332D',
-            }}
-          >
-            Budowa domu krok po kroku
-          </h2>
+    <section className="py-5 bg-white">
+      <div className="container">
+        <div className="row">
+          <div className="col-12 text-center mb-5">
+            <h2 
+              className="display-5 fw-bold" 
+              style={{fontFamily: 'Manrope', fontWeight: 800, fontSize: '48px', lineHeight: '66px', color: '#0A332D'}}
+            >
+              Budowa domu krok po kroku
+            </h2>
+          </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-16 items-center">
-
-          <div className="lg:w-1/3 flex flex-col items-center">
-            <div className="flex flex-col gap-6">
-              {steps.map((step, index) => (
-                <div key={index} className="flex flex-col items-center">
-                  <div 
-                    className="border-2 border-primary bg-white rounded px-6 py-4 min-w-[128px] text-center"
-                    style={{
-                      borderColor: '#0A332D',
-                      backgroundColor: '#FFFFFF',
-                    }}
-                  >
-                    <span 
-                      className="font-extrabold text-primary"
-                      style={{
-                        fontFamily: 'Manrope',
-                        fontWeight: 800,
-                        fontSize: '15px',
-                        lineHeight: '36px',
-                        color: '#0A332D',
-                      }}
-                    >
-                      {step}
-                    </span>
-                  </div>
-                  {index < steps.length - 1 && (
-                    <div 
-                      className="w-0 h-4 my-2"
-                      style={{
-                        borderLeft: '2px solid #FFA74E',
-                      }}
-                    ></div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="lg:w-1/3 flex justify-center">
+        <div className="row align-items-center">
+          <div className="col-lg-5">
             <div 
-              className="w-full h-96 bg-gray-300 rounded-lg"
+              className="rounded gallery-image-hover" 
               style={{
                 backgroundImage: `url('${getImagePath('/Zrzut ekranu 2025-03-13 o 13.57.05.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                maxWidth: '583px',
-                height: '678px',
+                width: '100%',
+                height: '500px'
               }}
             ></div>
           </div>
 
-          <div className="lg:w-1/3">
-            <div className="bg-white p-8">
-              <h3 
-                className="text-2xl font-bold text-primary mb-6"
-                style={{
-                  fontFamily: 'Manrope',
-                  fontWeight: 700,
-                  fontSize: '24px',
-                  lineHeight: '33px',
-                  color: '#0A332D',
-                }}
-              >
-                Proces budowy
-              </h3>
+          <div className="col-lg-3">
+            <div className="d-flex flex-column align-items-center">
+              <div className="d-flex flex-column align-items-center mb-4">
+                <div 
+                  className="border border-2 rounded px-4 py-3 text-center step-box" 
+                  style={{borderColor: '#0A332D', backgroundColor: '#FFFFFF', minWidth: '120px'}}
+                >
+                  <span 
+                    className="fw-bold" 
+                    style={{fontFamily: 'Manrope', fontWeight: 800, fontSize: '14px', color: '#0A332D'}}
+                  >
+                    DZIAŁKA
+                  </span>
+                </div>
+                <div className="d-flex align-items-center justify-content-center my-3">
+                  <svg width="20" height="20" fill="#FFA74E" viewBox="0 0 24 24">
+                    <path d="M12 16l-6-6h12z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="d-flex flex-column align-items-center mb-4">
+                <div 
+                  className="border border-2 rounded px-4 py-3 text-center step-box" 
+                  style={{borderColor: '#0A332D', backgroundColor: '#FFFFFF', minWidth: '120px'}}
+                >
+                  <span 
+                    className="fw-bold" 
+                    style={{fontFamily: 'Manrope', fontWeight: 800, fontSize: '14px', color: '#0A332D'}}
+                  >
+                    PROJEKT
+                  </span>
+                </div>
+                <div className="d-flex align-items-center justify-content-center my-3">
+                  <svg width="20" height="20" fill="#FFA74E" viewBox="0 0 24 24">
+                    <path d="M12 16l-6-6h12z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="d-flex flex-column align-items-center mb-4">
+                <div 
+                  className="border border-2 rounded px-4 py-3 text-center step-box" 
+                  style={{borderColor: '#0A332D', backgroundColor: '#FFFFFF', minWidth: '120px'}}
+                >
+                  <span 
+                    className="fw-bold" 
+                    style={{fontFamily: 'Manrope', fontWeight: 800, fontSize: '14px', color: '#0A332D'}}
+                  >
+                    BUDOWA
+                  </span>
+                </div>
+                <div className="d-flex align-items-center justify-content-center my-3">
+                  <svg width="20" height="20" fill="#FFA74E" viewBox="0 0 24 24">
+                    <path d="M12 16l-6-6h12z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="d-flex flex-column align-items-center">
+                <div 
+                  className="border border-2 rounded px-4 py-3 text-center step-box" 
+                  style={{borderColor: '#0A332D', backgroundColor: '#FFFFFF', minWidth: '120px'}}
+                >
+                  <span 
+                    className="fw-bold" 
+                    style={{fontFamily: 'Manrope', fontWeight: 800, fontSize: '14px', color: '#0A332D'}}
+                  >
+                    DETALE
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div className="col-lg-4">
+            <div className="ps-3">
               <p 
-                className="text-lg font-bold text-primary leading-relaxed mb-4"
-                style={{
-                  fontFamily: 'Manrope',
-                  fontWeight: 700,
-                  fontSize: '18px',
-                  lineHeight: '32px',
-                  color: '#0A332D',
-                }}
+                className="mb-4" 
+                style={{fontFamily: 'Manrope', fontWeight: 700, fontSize: '18px', lineHeight: '32px', color: '#0A332D'}}
               >
-                Proces budowy jest złożony. Łatwiej wykonać go z zaufanym partnerem. Warto ponieść ten trud, 
-                bo nagroda za wysiłek jest duża. Posiadanie wpływu na każdy aspekt budowy domu jest bezcenne. 
-                Zaczynając od wyboru działki, projektu samej budowy Inwestor ma wpływ na każdy aspekt. 
-                Nie dostanie się tego kupując gotową nieruchomość.
+                <strong>Proces budowy jest złożony.</strong> Łatwiej wykonać go z zaufanym partnerem. Warto 
+                ponieść ten trud, bo nagroda za wysiłek jest duża. Posiadanie wpływu na każdy 
+                aspekt budowy domu jest bezcenne. Zaczynając od wyboru działki, projektu samej 
+                budowy Inwestor ma wpływ na każdy aspekt. Nie dostanie się tego kupując gotową 
+                nieruchomość.
               </p>
 
-              <div className="flex items-center gap-2 mb-6">
-                <div className="w-1 h-6" style={{ backgroundColor: '#9DADAB' }}></div>
+              <div className="d-flex align-items-center mb-4">
+                <div style={{width: '3px', height: '24px', backgroundColor: '#9DADAB'}} className="me-2"></div>
                 <span 
-                  className="text-text-muted font-bold"
-                  style={{
-                    fontFamily: 'Manrope',
-                    fontWeight: 700,
-                    fontSize: '16px',
-                    lineHeight: '24px',
-                    color: '#6C8581',
-                  }}
+                  className="fw-bold" 
+                  style={{fontFamily: 'Manrope', fontWeight: 700, fontSize: '16px', lineHeight: '24px', color: '#6C8581'}}
                 >
                   więcej
                 </span>
               </div>
 
-              <div className="space-y-4">
-                <Button 
-                  variant="outlined"
-                  className="w-full"
+              <div className="d-flex align-items-center justify-content-between">
+                <button 
+                  className="btn d-flex align-items-center interactive-link" 
                   style={{
-                    borderColor: '#FFA74E',
+                    fontFamily: 'Manrope',
+                    fontWeight: 700,
+                    fontSize: '16px',
                     color: '#0A332D',
+                    background: 'transparent',
+                    border: 'none',
+                    padding: '8px 0'
                   }}
                 >
-                  Przeglądaj projekty
-                </Button>
+                  Poznaj korzyści
+                  <svg width="16" height="16" fill="#FFA74E" viewBox="0 0 24 24" className="ms-2">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                  </svg>
+                </button>
+              </div>
 
-                <Button 
-                  variant="outlined"
-                  className="w-full"
+              <div className="d-flex align-items-center justify-content-between mt-3">
+                <button 
+                  className="btn d-flex align-items-center interactive-link" 
                   style={{
-                    borderColor: '#FFA74E',
+                    fontFamily: 'Manrope',
+                    fontWeight: 700,
+                    fontSize: '16px',
                     color: '#0A332D',
+                    background: 'transparent',
+                    border: 'none',
+                    padding: '8px 0'
                   }}
                 >
                   Przeglądaj projekty
-                </Button>
+                  <svg width="16" height="16" fill="#FFA74E" viewBox="0 0 24 24" className="ms-2">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -157,4 +170,4 @@ export const BuildingStepsSection: React.FC = () => {
       </div>
     </section>
   );
-}; 
+};

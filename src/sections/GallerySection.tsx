@@ -1,137 +1,121 @@
 import React from 'react';
 import { getImagePath } from '../utils/imagePath';
+import { Button } from '../components/ui/Button';
 
 export const GallerySection: React.FC = () => {
-  const projects = [
-    { image: getImagePath('/strzeniówka51 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: getImagePath('/thumb2 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: getImagePath('/ursus 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: getImagePath('/strzeniówka51 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: getImagePath('/thumb2 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-    { image: getImagePath('/ursus 1.png'), description: 'Warszawa\nRealizacja na terenie Warszawy\nWykonawca: House-4-you' },
-  ];
-
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-[1660px] mx-auto px-5">
-
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 
-            className="mb-8"
-            style={{
-              fontFamily: 'Manrope',
-              fontWeight: 800,
-              fontSize: '40px',
-              lineHeight: '55px',
-              color: '#0A332D',
-              textAlign: 'center',
-            }}
-          >
-            Na przestrzeni 30 lat zmieniły się trendy, jednak to, co pozostało niezmienne, 
-            to jakość wybudowanych przez nas domów
-          </h2>
-
-          <div className="mb-8">
+    <section className="py-5 bg-white">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-8 mx-auto text-center mb-5">
+            <h2 
+              className="display-6 fw-bold mb-4" 
+              style={{fontFamily: 'Manrope', color: '#0A332D'}}
+            >
+              Na przestrzeni 30 lat zmieniły się trendy, jednak to, co pozostało niezmienne, 
+              to jakość wybudowanych przez nas domów
+            </h2>
             <p 
-              className="mb-4"
-              style={{
-                fontFamily: 'Manrope',
-                fontWeight: 700,
-                fontSize: '18px',
-                lineHeight: '32px',
-                color: '#0A332D',
-                textAlign: 'center',
-              }}
+              className="lead fw-bold mb-4" 
+              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.125rem'}}
             >
               Firma budowlana House-4-You to dobre rozwiązanie dla Twojej inwestycji budowy domu. 
               Z nami zrealizujesz marzenie o własnym domu lub funkcjonalnym biurze od A do Z.
             </p>
-
-            <div className="flex items-center justify-center gap-2 mb-6">
-              <div 
-                className="w-1 h-6"
-                style={{ backgroundColor: '#9DADAB' }}
-              ></div>
-              <span 
-                style={{
-                  fontFamily: 'Manrope',
-                  fontWeight: 700,
-                  fontSize: '16px',
-                  lineHeight: '24px',
-                  color: '#6C8581',
-                }}
-              >
-                więcej
-              </span>
+            <div className="d-flex align-items-center justify-content-center mb-4">
+              <div style={{width: '3px', height: '24px', backgroundColor: '#9DADAB'}} className="me-2"></div>
+              <span className="fw-bold" style={{fontFamily: 'Manrope', color: '#6C8581'}}>więcej</span>
             </div>
-          </div>
-
-          <div className="flex items-center justify-center gap-4 mb-8">
             <span 
-              style={{
-                fontFamily: 'Manrope',
-                fontWeight: 700,
-                fontSize: '18px',
-                lineHeight: '25px',
-                color: '#0A332D',
-              }}
+              className="fw-bold" 
+              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.125rem'}}
             >
               Przeglądaj projekty
             </span>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded overflow-hidden">
-              <div 
-                className="w-full h-72 rounded"
-                style={{
-                  backgroundImage: `url(${project.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-              ></div>
-              <div className="pt-4">
-                <p 
-                  style={{
-                    fontFamily: 'Manrope',
-                    fontWeight: 600,
-                    fontSize: '18px',
-                    lineHeight: '25px',
-                    color: '#000000',
-                    whiteSpace: 'pre-line',
-                  }}
-                >
-                  {project.description}
-                </p>
-              </div>
+        <div className="row mb-5">
+          <div className="col-md-4 mb-4">
+            <div 
+              className="rounded gallery-image-hover" 
+              style={{
+                backgroundImage: `url('${getImagePath('/strzeniówka51 1.png')}')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '300px'
+              }}
+            ></div>
+            <div className="mt-3">
+              <p 
+                className="fw-semibold mb-0" 
+                style={{fontFamily: 'Manrope', color: '#000000'}}
+              >
+                Warszawa<br/>
+                Realizacja na terenie Warszawy<br/>
+                Wykonawca: House-4-you
+              </p>
             </div>
-          ))}
+          </div>
+          <div className="col-md-4 mb-4">
+            <div 
+              className="rounded gallery-image-hover" 
+              style={{
+                backgroundImage: `url('${getImagePath('/thumb2 1.png')}')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '300px'
+              }}
+            ></div>
+            <div className="mt-3">
+              <p 
+                className="fw-semibold mb-0" 
+                style={{fontFamily: 'Manrope', color: '#000000'}}
+              >
+                Warszawa<br/>
+                Realizacja na terenie Warszawy<br/>
+                Wykonawca: House-4-you
+              </p>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div 
+              className="rounded gallery-image-hover" 
+              style={{
+                backgroundImage: `url('${getImagePath('/ursus 1.png')}')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '300px'
+              }}
+            ></div>
+            <div className="mt-3">
+              <p 
+                className="fw-semibold mb-0" 
+                style={{fontFamily: 'Manrope', color: '#000000'}}
+              >
+                Warszawa<br/>
+                Realizacja na terenie Warszawy<br/>
+                Wykonawca: House-4-you
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="text-center">
-          <button 
-            className="transition-colors"
-            style={{
-              border: '2px solid #FFA74E',
-              borderRadius: '4px',
-              color: '#0A332D',
-              backgroundColor: 'transparent',
-              fontFamily: 'Manrope',
-              fontWeight: 700,
-              fontSize: '18px',
-              lineHeight: '25px',
-              padding: '24px 32px',
-              minWidth: '275px',
-              height: '72px',
-              cursor: 'pointer',
-            }}
-          >
-            Zobacz dowody na naszą rzetelność
-          </button>
+        <div className="row">
+          <div className="col-12 text-center">
+            <Button 
+              variant="outlined"
+              size="large"
+              style={{
+                borderColor: '#FFA74E',
+                color: '#0A332D'
+              }}
+            >
+              Zobacz dowody na naszą rzetelność
+            </Button>
+          </div>
         </div>
       </div>
     </section>
   );
-}; 
+};

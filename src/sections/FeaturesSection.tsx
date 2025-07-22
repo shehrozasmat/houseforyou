@@ -1,154 +1,112 @@
 import React from 'react';
 import { getImagePath } from '../utils/imagePath';
+import { Button } from '../components/ui/Button';
 
 export const FeaturesSection: React.FC = () => {
-  const features = [
-    {
-      title: 'Kompleksowość',
-      description: 'Budową domów, budynków biurowych zajmujemy się kompleksowo, od a do z. Możemy pomóc w znalezieniu działki,...',
-    },
-    {
-      title: 'Doświadczenie', 
-      description: 'Budową domów, budynków biurowych zajmujemy się kompleksowo, od a do z. Możemy pomóc w znalezieniu działki,...',
-    },
-    {
-      title: 'Gwarancja 10 lat',
-      description: 'Budową domów, budynków biurowych zajmujemy się kompleksowo, od a do z. Możemy pomóc w znalezieniu działki,...',
-    },
-  ];
-
   return (
-    <section 
-      className="py-16"
-      style={{ 
-        background: 'linear-gradient(180deg, rgba(157, 173, 171, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%)'
-      }}
-    >
-      <div className="max-w-[1660px] mx-auto px-5">
-
-        <div className="flex flex-col lg:flex-row gap-16 items-center mb-16">
-
-          <div className="lg:w-1/2">
+    <section className="py-5" style={{background: 'linear-gradient(180deg, rgba(157, 173, 171, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%)'}}>
+      <div className="container">
+        <div className="row align-items-center mb-5">
+          <div className="col-lg-6">
             <h2 
-              className="mb-8"
-              style={{
-                fontFamily: 'Manrope',
-                fontWeight: 800,
-                fontSize: '48px',
-                lineHeight: '66px',
-                color: '#0A332D',
-              }}
+              className="display-5 fw-bold mb-4" 
+              style={{fontFamily: 'Manrope', color: '#0A332D'}}
             >
               Zbuduj z nami swój dom
             </h2>
-
-            <div className="mb-8">
-              <p 
-                className="mb-4"
-                style={{
-                  fontFamily: 'Manrope',
-                  fontWeight: 700,
-                  fontSize: '18px',
-                  lineHeight: '32px',
-                  color: '#0A332D',
-                }}
-              >
-                Firma House-4-You oferuje kompleksowe usługi budowlane, od dokumentów, pozwoleń, fundamentu, 
-                przez stan surowy, deweloperski, prace pod klucz, zagospodarowanie terenu i ogród. Dbamy o każdy detal budowy. 
-                Jakość potwierdzamy 10-cio letnią gwarancją. Z nami Twoje marzenie o budowie domu stanie się rzeczywistością.
-              </p>
-
-              <div className="flex items-center gap-2">
-                <div 
-                  className="w-1 h-6"
-                  style={{ backgroundColor: '#9DADAB' }}
-                ></div>
-                <span 
-                  style={{
-                    fontFamily: 'Manrope',
-                    fontWeight: 700,
-                    fontSize: '16px',
-                    lineHeight: '24px',
-                    color: '#6C8581',
-                  }}
-                >
-                  więcej
-                </span>
-              </div>
+            <p 
+              className="lead fw-bold mb-4" 
+              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.125rem'}}
+            >
+              Firma House-4-You oferuje kompleksowe usługi budowlane, od dokumentów, pozwoleń, fundamentu, 
+              przez stan surowy, deweloperski, prace pod klucz, zagospodarowanie terenu i ogród. Dbamy o każdy detal budowy. 
+              Jakość potwierdzamy 10-cio letnią gwarancją. Z nami Twoje marzenie o budowie domu stanie się rzeczywistością.
+            </p>
+            <div className="d-flex align-items-center mb-4">
+              <div style={{width: '3px', height: '24px', backgroundColor: '#9DADAB'}} className="me-2"></div>
+              <span className="fw-bold" style={{fontFamily: 'Manrope', color: '#6C8581'}}>więcej</span>
             </div>
-
-            <button 
-              className="transition-colors"
+            <Button 
+              variant="outlined"
+              size="large"
               style={{
-                border: '2px solid #FFA74E',
-                borderRadius: '4px',
-                color: '#0A332D',
-                backgroundColor: 'transparent',
-                fontFamily: 'Manrope',
-                fontWeight: 700,
-                fontSize: '18px',
-                lineHeight: '25px',
-                padding: '24px 32px',
-                minWidth: '220px',
-                height: '72px',
-                cursor: 'pointer',
+                borderColor: '#FFA74E',
+                color: '#0A332D'
               }}
             >
               Przeglądaj projekty
-            </button>
+            </Button>
           </div>
-
-          <div className="lg:w-1/2 flex justify-center">
+          <div className="col-lg-6">
             <div 
-              className="w-full rounded-lg"
+              className="rounded gallery-image-hover" 
               style={{
                 backgroundImage: `url('${getImagePath('/promo banner desktop.png')}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                maxWidth: '600px',
-                height: '400px',
+                height: '400px'
               }}
             ></div>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <div 
-              key={index} 
-              className="text-center p-12 rounded-lg"
-              style={{
-                backgroundColor: '#FFFFFF',
-                boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-              }}
-            >
-              <h3 
-                className="mb-6"
-                style={{
-                  fontFamily: 'Manrope',
-                  fontWeight: 700,
-                  fontSize: '32px',
-                  lineHeight: '36px',
-                  color: '#0A332D',
-                }}
-              >
-                {feature.title}
-              </h3>
-              <p 
-                style={{
-                  fontFamily: 'Manrope',
-                  fontWeight: 400,
-                  fontSize: '18px',
-                  lineHeight: '36px',
-                  color: '#000000',
-                }}
-              >
-                {feature.description}
-              </p>
+        <div className="row">
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm h-100 p-4 text-center">
+              <div className="card-body">
+                <h5 
+                  className="card-title fw-bold mb-4" 
+                  style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '2rem'}}
+                >
+                  Kompleksowość
+                </h5>
+                <p 
+                  className="card-text" 
+                  style={{fontFamily: 'Manrope', color: '#000000', fontSize: '1.125rem'}}
+                >
+                  Budową domów, budynków biurowych zajmujemy się kompleksowo, od a do z. Możemy pomóc w znalezieniu działki,...
+                </p>
+              </div>
             </div>
-          ))}
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm h-100 p-4 text-center">
+              <div className="card-body">
+                <h5 
+                  className="card-title fw-bold mb-4" 
+                  style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '2rem'}}
+                >
+                  Doświadczenie
+                </h5>
+                <p 
+                  className="card-text" 
+                  style={{fontFamily: 'Manrope', color: '#000000', fontSize: '1.125rem'}}
+                >
+                  Budową domów, budynków biurowych zajmujemy się kompleksowo, od a do z. Możemy pomóc w znalezieniu działki,...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm h-100 p-4 text-center">
+              <div className="card-body">
+                <h5 
+                  className="card-title fw-bold mb-4" 
+                  style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '2rem'}}
+                >
+                  Gwarancja 10 lat
+                </h5>
+                <p 
+                  className="card-text" 
+                  style={{fontFamily: 'Manrope', color: '#000000', fontSize: '1.125rem'}}
+                >
+                  Budową domów, budynków biurowych zajmujemy się kompleksowo, od a do z. Możemy pomóc w znalezieniu działki,...
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
-}; 
+};

@@ -11,56 +11,50 @@ export const Footer: React.FC = () => {
   ];
 
   return (
-    <footer 
-      className="py-16"
-      style={{ backgroundColor: '#FFFBF8' }}
-    >
-      <div className="max-w-[1660px] mx-auto px-5 text-center">
-        
-        <div className="mb-14">
-          <div 
-            className="mb-2"
+    <footer className="py-5" style={{backgroundColor: '#FFFBF8'}}>
+      <div className="container text-center">
+        <div className="mb-5">
+          <h3 
+            className="fw-bold mb-0" 
             style={{
-              fontFamily: 'Manrope',
-              fontWeight: 800,
-              fontSize: '24px',
-              color: '#0A332D',
+              fontFamily: 'Manrope', 
+              color: '#0A332D', 
+              fontSize: '1.5rem'
             }}
           >
             House-4-You
-          </div>
+          </h3>
         </div>
 
-        <nav className="flex flex-wrap justify-center gap-8 md:gap-10">
-          {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="transition-colors hover:opacity-70"
-              style={{
-                fontFamily: 'Manrope',
-                fontWeight: 600,
-                fontSize: '16px',
-                lineHeight: '22px',
-                letterSpacing: '0.03em',
-                textTransform: 'uppercase',
-                color: '#0A332D',
-              }}
-            >
-              {item.label}
-            </a>
-          ))}
+        <nav className="mb-4">
+          <div className="row justify-content-center">
+            {navItems.map((item) => (
+              <div key={item.label} className="col-auto">
+                <a 
+                  href={item.href} 
+                  className="text-decoration-none text-uppercase fw-semibold mx-3" 
+                  style={{
+                    fontFamily: 'Manrope', 
+                    color: '#0A332D',
+                    fontSize: '16px',
+                    lineHeight: '22px',
+                    letterSpacing: '0.03em',
+                  }}
+                >
+                  {item.label}
+                </a>
+              </div>
+            ))}
+          </div>
         </nav>
 
-        <div 
-          className="mt-12 pt-8"
-          style={{ borderTop: '1px solid #E5E5E5' }}
-        >
+        <div className="pt-4 border-top">
           <p 
+            className="mb-0" 
             style={{
-              fontFamily: 'Manrope',
-              fontSize: '14px',
-              color: '#6B7280',
+              fontFamily: 'Manrope', 
+              color: '#6B7280', 
+              fontSize: '0.875rem'
             }}
           >
             © 2024 House-4-You. Wszystkie prawa zastrzeżone.
@@ -69,4 +63,4 @@ export const Footer: React.FC = () => {
       </div>
     </footer>
   );
-}; 
+};

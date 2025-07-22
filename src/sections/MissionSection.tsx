@@ -1,190 +1,104 @@
 import React from 'react';
+import { Button } from '../components/ui/Button';
 
 export const MissionSection: React.FC = () => {
   return (
-    <section className="bg-white py-16">
-      <div className="max-w-[1660px] mx-auto px-5">
-        <div className="flex flex-col items-center text-center">
-          
-          <div className="max-w-[800px] mx-auto mb-12">
+    <section className="py-5 bg-white">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-8 mx-auto text-center mb-5">
             <h2 
-              className="mb-4"
-              style={{
-                fontFamily: 'Manrope',
-                fontWeight: 800,
-                fontSize: '48px',
-                lineHeight: '62px',
-                color: '#082924',
-                textAlign: 'center',
-              }}
+              className="display-5 fw-bold mb-3" 
+              style={{fontFamily: 'Manrope', color: '#082924'}}
             >
               Dlaczego warto nam zaufać?
             </h2>
             <p 
-              className="mb-8"
-              style={{
-                fontFamily: 'Manrope',
-                fontWeight: 600,
-                fontSize: '24px',
-                lineHeight: '30px',
-                color: '#6C8581',
-                textAlign: 'center',
-              }}
+              className="fs-4 fw-semibold mb-4" 
+              style={{fontFamily: 'Manrope', color: '#6C8581'}}
             >
               Stoją za nami lata doświadczeń
             </p>
-          </div>
-
-          <div className="max-w-[800px] mx-auto mb-12">
             <p 
-              className="mb-6"
-              style={{
-                fontFamily: 'Manrope',
-                fontWeight: 700,
-                fontSize: '18px',
-                lineHeight: '32px',
-                color: '#082924',
-                textAlign: 'center',
-              }}
+              className="lead fw-bold mb-4" 
+              style={{fontFamily: 'Manrope', color: '#082924', fontSize: '1.125rem'}}
             >
               Misją House-4-You jest kompleksowe budowanie wysokiej jakości domów jednorodzinnych, 
               dopasowanych do indywidualnych potrzeb naszych klientów, w całej Polsce.
             </p>
-            
-            <div className="flex items-center justify-center gap-2 mb-8">
-              <div 
-                className="w-1 h-6"
-                style={{ backgroundColor: '#9DADAB' }}
-              ></div>
-              <span 
-                style={{
-                  fontFamily: 'Manrope',
-                  fontWeight: 700,
-                  fontSize: '16px',
-                  lineHeight: '24px',
-                  color: '#6C8581',
-                }}
-              >
-                więcej
-              </span>
+            <div className="d-flex align-items-center justify-content-center mb-4">
+              <div style={{width: '3px', height: '24px', backgroundColor: '#9DADAB'}} className="me-2"></div>
+              <span className="fw-bold" style={{fontFamily: 'Manrope', color: '#6C8581'}}>więcej</span>
             </div>
           </div>
+        </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
-            <div 
-              className="p-12 rounded-lg"
-              style={{
-                backgroundColor: '#FFFFFF',
-                boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-              }}
-            >
-              <h3 
-                className="mb-4"
-                style={{
-                  fontFamily: 'Manrope',
-                  fontWeight: 800,
-                  fontSize: '24px',
-                  lineHeight: '32px',
-                  color: '#082924',
-                }}
-              >
-                Dlaczego warto nam zaufać?
-              </h3>
-              <p 
-                className="mb-6"
-                style={{
-                  fontFamily: 'Manrope',
-                  fontWeight: 700,
-                  fontSize: '16px',
-                  lineHeight: '22px',
-                  color: '#103D36',
-                }}
-              >
-                Stoją za nami lata doświadczeń
-              </p>
-              <div 
-                className="text-center py-6 px-4 rounded"
-                style={{
-                  backgroundColor: '#FFA74E',
-                  color: '#0A332D',
-                  fontFamily: 'Manrope',
-                  fontWeight: 800,
-                  fontSize: '16px',
-                  lineHeight: '22px',
-                }}
-              >
-                Metraż domu 200-250m2
-              </div>
-            </div>
-
-            <div 
-              className="p-12 rounded-lg"
-              style={{
-                backgroundColor: '#FFFFFF',
-                boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-              }}
-            >
-              <h3 
-                className="mb-4"
-                style={{
-                  fontFamily: 'Manrope',
-                  fontWeight: 800,
-                  fontSize: '24px',
-                  lineHeight: '32px',
-                  color: '#082924',
-                }}
-              >
-                Dlaczego warto nam zaufać?
-              </h3>
-              <p 
-                className="mb-6"
-                style={{
-                  fontFamily: 'Manrope',
-                  fontWeight: 700,
-                  fontSize: '16px',
-                  lineHeight: '22px',
-                  color: '#103D36',
-                }}
-              >
-                Stoją za nami lata doświadczeń
-              </p>
-              <div 
-                className="text-center py-6 px-4 rounded"
-                style={{
-                  backgroundColor: '#CED6D5',
-                  color: '#020A09',
-                  fontFamily: 'Manrope',
-                  fontWeight: 800,
-                  fontSize: '16px',
-                  lineHeight: '22px',
-                }}
-              >
-                telefon: 606 730 239
+        <div className="row mb-5">
+          <div className="col-md-6 mb-4">
+            <div className="card shadow-sm h-100 p-4 fade-in">
+              <div className="card-body text-center">
+                <h5 
+                  className="card-title fw-bold mb-3" 
+                  style={{fontFamily: 'Manrope', color: '#082924'}}
+                >
+                  Dlaczego warto nam zaufać?
+                </h5>
+                <p 
+                  className="card-text fw-bold mb-4" 
+                  style={{fontFamily: 'Manrope', color: '#103D36'}}
+                >
+                  Stoją za nami lata doświadczeń
+                </p>
+                <div 
+                  className="p-3 rounded fw-bold" 
+                  style={{backgroundColor: '#FFA74E', color: '#0A332D', fontFamily: 'Manrope'}}
+                >
+                  Metraż domu 200-250m2
+                </div>
               </div>
             </div>
           </div>
+          <div className="col-md-6 mb-4">
+            <div className="card shadow-sm h-100 p-4 fade-in">
+              <div className="card-body text-center">
+                <h5 
+                  className="card-title fw-bold mb-3" 
+                  style={{fontFamily: 'Manrope', color: '#082924'}}
+                >
+                  Dlaczego warto nam zaufać?
+                </h5>
+                <p 
+                  className="card-text fw-bold mb-4" 
+                  style={{fontFamily: 'Manrope', color: '#103D36'}}
+                >
+                  Stoją za nami lata doświadczeń
+                </p>
+                <div 
+                  className="p-3 rounded fw-bold" 
+                  style={{backgroundColor: '#CED6D5', color: '#020A09', fontFamily: 'Manrope'}}
+                >
+                  telefon: 606 730 239
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <button 
-            className="transition-colors"
-            style={{
-              border: '2px solid #FFA74E',
-              borderRadius: '4px',
-              color: '#0A332D',
-              backgroundColor: 'transparent',
-              fontFamily: 'Manrope',
-              fontWeight: 700,
-              fontSize: '18px',
-              lineHeight: '25px',
-              padding: '24px 32px',
-              minWidth: '358px',
-              height: '72px',
-              cursor: 'pointer',
-            }}
-          >
-            Zobacz dowody na naszą rzetelność
-          </button>
+        <div className="row">
+          <div className="col-12 text-center">
+            <Button 
+              variant="outlined"
+              size="large"
+              style={{
+                borderColor: '#FFA74E',
+                color: '#0A332D'
+              }}
+            >
+              Zobacz dowody na naszą rzetelność
+            </Button>
+          </div>
         </div>
       </div>
     </section>
   );
-}; 
+};

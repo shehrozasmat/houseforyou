@@ -1,69 +1,55 @@
 import React from 'react';
 import { getImagePath } from '../utils/imagePath';
+import { Button } from '../components/ui/Button';
 
 export const ContactSection: React.FC = () => {
   return (
     <section 
-      className="relative py-24"
+      className="position-relative py-5" 
       style={{
         backgroundImage: `url('${getImagePath('/image contact form.png')}')`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center'
       }}
     >
       <div 
-        className="absolute inset-0"
-        style={{ backgroundColor: '#0A332D' }}
-      />
+        className="position-absolute top-0 start-0 w-100 h-100" 
+        style={{backgroundColor: '#0A332D', opacity: 0.8}}
+      ></div>
 
-      <div className="relative z-10 container mx-auto px-5">
-        <div className="max-w-4xl mx-auto text-center">
+      <div className="position-relative container">
+        <div className="row">
+          <div className="col-lg-8 mx-auto text-center">
+            <div className="mb-5">
+              <h2 
+                className="h3 mb-3" 
+                style={{fontFamily: 'Manrope', color: '#FFA74E', fontWeight: 400}}
+              >
+                Nie przekonaliśmy Cię?
+              </h2>
+              <h3 
+                className="h3 fw-bold" 
+                style={{fontFamily: 'Manrope', color: '#FFA74E'}}
+              >
+                Napisz i umów się na rozmowę
+              </h3>
+            </div>
 
-          <div className="mb-12">
-            <h2 
-              className="text-3xl md:text-4xl font-normal text-secondary mb-4"
+            <Button 
+              variant="filled"
+              size="large"
               style={{
-                fontFamily: 'Manrope',
-                fontWeight: 400,
-                fontSize: '32px',
-                lineHeight: '44px',
+                background: 'linear-gradient(90deg, rgba(13, 56, 49, 0.95) 0%, rgba(38, 116, 102, 0) 100%), rgba(15, 66, 58, 0.9)',
+                border: '2px solid #244641',
                 color: '#FFA74E',
+                minWidth: '392px'
               }}
             >
-              Nie przekonaliśmy Cię?
-            </h2>
-            <h3 
-              className="text-3xl md:text-4xl font-bold text-secondary"
-              style={{
-                fontFamily: 'Manrope',
-                fontWeight: 700,
-                fontSize: '32px',
-                lineHeight: '44px',
-                color: '#FFA74E',
-              }}
-            >
-              Napisz i umów się na rozmowę
-            </h3>
+              Skontaktuj się z nami
+            </Button>
           </div>
-
-          <button 
-            className="px-8 py-6 rounded font-bold transition-colors"
-            style={{
-              background: 'linear-gradient(90deg, rgba(13, 56, 49, 0.95) 0%, rgba(38, 116, 102, 0) 100%), rgba(15, 66, 58, 0.9)',
-              border: '2px solid #244641',
-              color: '#FFA74E',
-              fontFamily: 'Manrope',
-              fontWeight: 700,
-              fontSize: '18px',
-              lineHeight: '25px',
-              minWidth: '392px',
-              height: '72px',
-            }}
-          >
-            Zobacz dowody na naszą rzetelność
-          </button>
         </div>
       </div>
     </section>
   );
-}; 
+};

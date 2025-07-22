@@ -20,30 +20,30 @@ export const Button: React.FC<ButtonProps> = ({
   style = {},
 }) => {
   const getBaseClasses = () => {
-    return 'inline-flex items-center justify-center font-bold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2';
+    return 'btn d-inline-flex align-items-center justify-content-center fw-bold';
   };
 
   const getVariantClasses = () => {
     switch (variant) {
       case 'outlined':
-        return 'border-2 border-secondary text-primary bg-transparent hover:bg-secondary hover:text-primary';
+        return 'btn-outline-warning';
       case 'ghost':
-        return 'border-2 border-secondary text-secondary bg-transparent hover:bg-secondary hover:text-primary';
+        return 'btn-outline-warning';
       case 'filled':
-        return 'bg-gradient-to-r from-primary/95 to-primary/90 border-2 border-primary text-secondary hover:opacity-90';
+        return '';
       default:
-        return 'bg-secondary text-primary border-2 border-secondary hover:bg-secondary/90';
+        return 'btn-warning';
     }
   };
 
   const getSizeClasses = () => {
     switch (size) {
       case 'small':
-        return 'px-4 py-2 text-sm h-10 rounded';
+        return 'btn-sm px-4 py-2';
       case 'large':
-        return 'px-8 py-6 text-lg h-18 rounded-lg';
+        return 'btn-lg px-5 py-3';
       default:
-        return 'px-6 py-4 text-base h-[72px] rounded';
+        return 'px-4 py-3';
     }
   };
 
@@ -51,7 +51,7 @@ export const Button: React.FC<ButtonProps> = ({
     ${getBaseClasses()}
     ${getVariantClasses()}
     ${getSizeClasses()}
-    ${disabled ? 'opacity-50 cursor-not-allowed' : ''}
+    ${disabled ? 'opacity-50' : ''}
     ${className}
   `.trim().replace(/\s+/g, ' ');
 
@@ -74,4 +74,4 @@ export const Button: React.FC<ButtonProps> = ({
       {children}
     </button>
   );
-}; 
+};
