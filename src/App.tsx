@@ -36,7 +36,7 @@ function App() {
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center text-white">
               <h1 className="display-2 fw-bold mb-4 hero-title" style={{fontFamily: 'Manrope', fontSize: '4rem'}}>
-                Budujemy Twoje marzenia test
+                Budujemy Twoje marzenia
               </h1>
               <p className="lead mb-5 hero-subtitle" style={{fontFamily: 'Manrope', fontSize: '1.125rem', fontWeight: 500}}>
                 Ponad 30 lat doświadczenia w budowie domów jednorodzinnych. Kompleksowa realizacja od projektu do wykończenia.
