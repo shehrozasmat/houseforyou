@@ -304,3 +304,4 @@ npm run type-check   # Run TypeScript checks
 ---
 
 **Built with ❤️ for modern construction companies in Poland** 🇵🇱
+# Force deployment - Wed Jul 23 02:30:09 PKT 2025
