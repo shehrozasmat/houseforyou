@@ -1,101 +1,284 @@
-# House-4-You Homepage
+# 🏠 House-4-You - Construction Company Website
 
-A modern, responsive homepage for House-4-You, a house building company in Poland, built with React, TypeScript, and Tailwind CSS.
+A modern, professional website for House-4-You, a premier construction company specializing in single-family homes in Poland. Built with React, TypeScript, and Bootstrap 5.3.7 with stunning interactive animations.
 
-## Features
+![House-4-You Homepage](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
+![React](https://img.shields.io/badge/React-18.3.1-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.7-purple)
 
-- 🏠 Modern, professional design based on Figma specifications
-- 📱 Fully responsive layout for all device sizes
-- ⚡ Built with React 19 and TypeScript for type safety
-- 🎨 Styled with Tailwind CSS for optimal performance
-- 🔧 Modular component architecture
-- 🚀 Optimized for performance and SEO
+## ✨ Features
 
-## Tech Stack
+- 🏡 **Professional Design** - Pixel-perfect implementation based on Figma specifications
+- 📱 **Fully Responsive** - Optimized for desktop, tablet, and mobile devices
+- ⚡ **Interactive Animations** - Smooth hover effects, transitions, and micro-interactions
+- 🎨 **Bootstrap 5.3.7** - Modern CSS framework with utility classes
+- 🔧 **TypeScript** - Type-safe development with full IntelliSense
+- 🚀 **Vite** - Lightning-fast development and build tooling
+- 🎯 **SEO Optimized** - Semantic HTML structure and meta tags
+- ♿ **Accessible** - WCAG compliant with proper ARIA labels
+- 🎪 **Modern Effects** - Pulse animations, hover states, and smooth scrolling
 
-- **React 19** - Modern React with latest features
-- **TypeScript** - Type-safe development
-- **Tailwind CSS** - Utility-first CSS framework
-- **Vite** - Fast development and build tool
-- **Manrope Font** - Professional typography
+## 🛠️ Tech Stack
 
-## Project Structure
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| **React** | 18.3.1 | UI Library |
+| **TypeScript** | 5.0+ | Type Safety |
+| **Bootstrap** | 5.3.7 | CSS Framework |
+| **Vite** | 7.0.5 | Build Tool |
+| **Manrope Font** | Latest | Typography |
+
+## 📁 Project Structure
 
 ```
-src/
-├── components/
-│   ├── layout/         # Layout components (Header, Footer)
-│   └── ui/             # Reusable UI components (Button, etc.)
-├── sections/           # Homepage sections
-│   ├── HeroSection.tsx
-│   ├── MissionSection.tsx
-│   ├── FeaturesSection.tsx
-│   ├── GallerySection.tsx
-│   ├── StatsSection.tsx
-│   └── ContactSection.tsx
-├── styles/            # Global styles and CSS variables
-└── App.tsx           # Main application component
+houseforyou/
+├── public/                    # Static assets
+│   ├── Header background.png
+│   ├── promo banner desktop.png
+│   ├── project images/
+│   └── testimonial photos/
+├── src/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Header.tsx     # Navigation component
+│   │   │   └── Footer.tsx     # Footer component
+│   │   └── ui/
+│   │       ├── Button.tsx     # Reusable button component
+│   │       └── index.ts       # Component exports
+│   ├── sections/              # Homepage sections
+│   │   ├── HeroSection.tsx    # Main hero banner
+│   │   ├── MissionSection.tsx # Company mission & trust
+│   │   ├── StatsSection.tsx   # Company statistics
+│   │   ├── FeaturesSection.tsx # Service features
+│   │   ├── BuildingStepsSection.tsx # Construction process
+│   │   ├── TestimonialsSection.tsx  # Client testimonials
+│   │   ├── GallerySection.tsx       # Project portfolio
+│   │   ├── ImageGallerySection.tsx  # 30 years experience
+│   │   ├── ContactSection.tsx       # Contact CTA
+│   │   ├── AboutSection.tsx         # Company info
+│   │   └── BlogSection.tsx          # Blog section
+│   ├── App.tsx               # Main application
+│   ├── main.tsx             # Application entry point
+│   ├── index.css           # Global styles & animations
+│   └── vite-env.d.ts       # Vite type definitions
+├── index.html              # HTML template with Bootstrap CDN
+├── package.json           # Dependencies and scripts
+├── tsconfig.json         # TypeScript configuration
+├── vite.config.ts       # Vite configuration
+└── README.md           # Project documentation
 ```
 
-## Getting Started
+## 🚀 Quick Start
 
-1. **Install dependencies:**
+### Prerequisites
+- Node.js 18.0+ 
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/houseforyou.git
+   cd houseforyou
+   ```
+
+2. **Install dependencies:**
    ```bash
    npm install
    ```
 
-2. **Start development server:**
+3. **Start development server:**
    ```bash
    npm run dev
    ```
 
-3. **Open your browser:**
-   Navigate to `http://localhost:5173`
+4. **Open your browser:**
+   ```
+   http://localhost:5173
+   ```
 
-## Design System
-
-### Colors
-- **Primary:** #0A332D (Dark Green)
-- **Secondary:** #FFA74E (Orange)
-- **Accent:** #6C8581 (Light Green)
-- **Text:** #082924, #103D36, #6C8581
-- **Background:** #FFFFFF, #FFFBF8, #F9F6F1
-
-### Typography
-- **Font Family:** Manrope
-- **Weights:** 400, 500, 600, 700, 800
-
-## Sections
-
-1. **Hero Section** - Main banner with company tagline
-2. **Mission Section** - Company mission and values
-3. **Features Section** - Key benefits (Experience, Comprehensive service, 10-year warranty)
-4. **Gallery Section** - Project showcase
-5. **Stats Section** - Company achievements and numbers
-6. **Contact Section** - Call-to-action for potential clients
-7. **Footer** - Navigation and company information
-
-## Customization
-
-### Adding Images
-Replace placeholder images in the `public/` folder:
-- `hero-bg.jpg` - Hero section background
-- `project1.jpg`, `project2.jpg`, `project3.jpg` - Gallery images
-
-### Modifying Content
-Edit the respective section components in `src/sections/` to update text content, add new features, or modify layouts.
-
-### Styling
-The design uses Tailwind CSS with custom color variables defined in `tailwind.config.js`. Modify the configuration to update the design system.
-
-## Build for Production
+### Production Build
 
 ```bash
+# Build for production
 npm run build
+
+# Preview production build
+npm run preview
 ```
 
-The built files will be in the `dist/` directory, ready for deployment.
+## 🎨 Design System
 
-## License
+### Color Palette
+```css
+/* Primary Colors */
+--primary-dark: #0A332D;      /* Dark Green */
+--primary-light: #103D36;     /* Medium Green */
+--accent-orange: #FFA74E;     /* Brand Orange */
+--accent-gray: #6C8581;       /* Muted Green */
 
-© 2024 House-4-You. All rights reserved.
+/* Background Colors */
+--bg-white: #FFFFFF;
+--bg-cream: #FFFBF8;
+--bg-light: #F9F6F1;
+```
+
+### Typography
+- **Font Family:** Manrope (Google Fonts)
+- **Weights:** 400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold), 800 (Extrabold)
+- **Responsive:** Fluid typography scales across devices
+
+### Interactive Effects
+- **Hover Animations:** Lift effects with shadows
+- **Button States:** Color transitions and scaling
+- **Image Hovers:** Zoom effects (scale 1.05x)
+- **Navigation:** Underline animations
+- **Loading:** Fade-in and slide-up animations
+
+## 📄 Website Sections
+
+### 1. 🌟 Hero Section
+- Full-screen background with overlay
+- Animated text appearance
+- Pulsing CTA button
+- Professional company tagline
+
+### 2. 🤝 Mission Section  
+- Trust-building content
+- Interactive cards with hover effects
+- Company phone number and house size info
+- Clear value proposition
+
+### 3. 📊 Statistics Section
+- Animated number counters
+- Company achievements (150+ houses, 30 years experience)
+- Gradient text effects
+- Professional stat cards
+
+### 4. 🔧 Features Section
+- Service highlights with icons
+- Promotional banner image
+- Three-column feature grid
+- Interactive hover states
+
+### 5. 🏗️ Building Process
+- Step-by-step construction guide
+- Interactive step boxes
+- Central process image
+- Detailed process description
+
+### 6. 💬 Testimonials
+- Client feedback carousel
+- Professional headshots
+- Hover animations
+- Carousel indicators
+
+### 7. 🏘️ Project Gallery
+- Portfolio showcase
+- Image hover effects
+- Project descriptions
+- Responsive grid layout
+
+### 8. 📅 Experience Showcase
+- 30 years company history
+- Six-image horizontal gallery
+- Company story and challenges
+- Professional timeline
+
+### 9. 📞 Contact Section
+- Call-to-action overlay
+- Background image with dark overlay
+- Conversion-focused messaging
+- Contact button with effects
+
+### 10. 🔗 Footer
+- Company navigation
+- Professional links
+- Copyright information
+- Responsive layout
+
+## ⚙️ Configuration
+
+### Bootstrap Customization
+Bootstrap 5.3.7 is loaded via CDN for optimal performance:
+```html
+<!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+```
+
+### Custom Animations
+All animations are defined in `src/index.css`:
+- Fade-in effects
+- Hover transitions
+- Button animations
+- Loading states
+
+## 🌐 Browser Support
+
+- ✅ Chrome (90+)
+- ✅ Firefox (88+)
+- ✅ Safari (14+)
+- ✅ Edge (90+)
+- ✅ Mobile browsers
+
+## 📱 Responsive Breakpoints
+
+| Device | Breakpoint | Layout |
+|--------|------------|--------|
+| Mobile | < 768px | Single column, stacked sections |
+| Tablet | 768px - 1199px | Two-column layout |
+| Desktop | 1200px+ | Full multi-column design |
+| Large Desktop | 1400px+ | Optimized spacing |
+
+## 🎯 Performance Features
+
+- **Lazy Loading:** Images load on demand
+- **Code Splitting:** Optimized bundle sizes
+- **Modern JavaScript:** ES2020+ features
+- **CSS Optimization:** Minimized stylesheets
+- **Image Optimization:** WebP format support
+
+## 📈 SEO Features
+
+- Semantic HTML5 structure
+- Meta tags and Open Graph
+- Structured data markup
+- Optimized images with alt tags
+- Fast loading times
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/new-feature`
+3. Commit changes: `git commit -m 'Add new feature'`
+4. Push to branch: `git push origin feature/new-feature`
+5. Submit a pull request
+
+## 📝 Scripts
+
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+npm run type-check   # Run TypeScript checks
+```
+
+## 📞 Contact & Support
+
+**House-4-You Construction Company**
+- 📱 Phone: 606 730 239
+- 🌐 Website: [House-4-You.pl](https://house-4-you.pl)
+- 📧 Email: contact@house-4-you.pl
+
+## 📄 License
+
+© 2024 House-4-You Sp. z o.o. All rights reserved.
+
+---
+
+**Built with ❤️ for modern construction companies in Poland** 🇵🇱
