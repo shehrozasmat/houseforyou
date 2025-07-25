@@ -36,6 +36,7 @@ export const HeroSection: React.FC = () => {
                   borderColor: '#0A5D57',
                   color: '#FFA74E',
                   minWidth: '280px',
+                  minHeight: '74px',
                   fontWeight: 600
                 }}
               >
@@ -49,6 +50,7 @@ export const HeroSection: React.FC = () => {
                   borderColor: '#FFA74E',
                   color: '#FFFFFF',
                   minWidth: '280px',
+                  minHeight: '74px',
                   fontWeight: 600
                 }}
               >
