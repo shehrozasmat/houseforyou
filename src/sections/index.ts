@@ -7,3 +7,5 @@ export { TestimonialsSection } from './TestimonialsSection';
 export { GallerySection } from './GallerySection';
 export { ExperienceSection } from './ExperienceSection';
 export { ContactSection } from './ContactSection';
+export { ProblemSection } from './ProblemSection';
+export { BuildWithUsSection } from './BuildWithUsSection';

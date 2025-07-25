@@ -9,6 +9,8 @@ import {
   TestimonialsSection,
   GallerySection,
   ExperienceSection,
+  ProblemSection,
+  BuildWithUsSection,
   ContactSection
 } from './sections';
 
@@ -18,12 +20,14 @@ function App() {
       <Header />
       <HeroSection />
       <MissionSection />
-      <StatsSection />
-      <FeaturesSection />
-      <BuildingStepsSection />
-      <TestimonialsSection />
+      <ProblemSection />
+      <BuildWithUsSection />
       <GallerySection />
-      <ExperienceSection />
+        <ExperienceSection />
+        <BuildingStepsSection />
+        <StatsSection />
+        <FeaturesSection />
+      <TestimonialsSection />
       <ContactSection />
       <Footer />
     </div>

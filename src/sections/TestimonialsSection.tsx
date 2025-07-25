@@ -3,21 +3,24 @@ import { getImagePath } from '../utils/imagePath';
 
 export const TestimonialsSection: React.FC = () => {
   return (
-    <section className="py-5" style={{background: 'linear-gradient(121.01deg, rgba(249, 246, 241, 0.5) 26.39%, #FFFFFF 57.32%)'}}>
+    <section className="py-5" style={{background: 'background: linear-gradient(121.01deg, rgba(249, 246, 241, 0.5) 26.39%, #FFFFFF 57.32%);\n'}}>
       <div className="container">
         <div className="row">
-          <div className="col-lg-8 mx-auto text-center mb-5">
+          <div className="col-lg-6 text-left mb-5">
             <h2 
               className="display-5 fw-bold mb-4" 
-              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '3rem', fontWeight: 800}}
+              style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '36px', fontWeight: 'bold'}}
             >
-              Co mówią nasi klienci
+              Krótkie historie naszych klientów
             </h2>
             <p 
               className="lead fw-bold" 
               style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '1.125rem', fontWeight: 500}}
             >
-              Opinie zadowolonych właścicieli domów wybudowanych przez House-4-You
+              Posiadając ponad 30 lat doświadczenia w budowie domów jednorodzinnych oraz budynków biurowych, zrealizowaliśmy ponad 2500 projektów.
+            </p>
+            <p>
+              Każdy obiekt to unikalna historia, a nasza praca opiera się na wieloletniej wiedzy i rzetelnym podejściu do inwestycji. W budownictwie nie zawsze klienci mają okazję poznać wszystkie wyzwania i pułapki, dlatego nasza kompleksowa oferta budowlana cieszy się dużym zaufaniem.
             </p>
           </div>
         </div>

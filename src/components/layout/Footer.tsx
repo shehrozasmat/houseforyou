@@ -1,4 +1,5 @@
 import React from 'react';
+import {getImagePath} from "../../utils/imagePath.ts";
 
 export const Footer: React.FC = () => {
   const navItems = [
@@ -22,9 +23,7 @@ export const Footer: React.FC = () => {
               fontSize: '1.5rem'
             }}
           >
-            <span style={{color: '#0A332D'}}>HOUSE</span>
-            <span style={{color: '#FFA74E', marginLeft: '2px'}}>4</span>
-            <span style={{color: '#0A332D', marginLeft: '2px'}}>YOU</span>
+         <img src={getImagePath('/h4y-color-1.png')}/>
           </h3>
         </div>
 
@@ -50,18 +49,7 @@ export const Footer: React.FC = () => {
           </div>
         </nav>
 
-        <div className="pt-4 border-top">
-          <p 
-            className="mb-0" 
-            style={{
-              fontFamily: 'Manrope', 
-              color: '#6B7280', 
-              fontSize: '0.875rem'
-            }}
-          >
-            © 2024 House-4-You. Wszystkie prawa zastrzeżone.
-          </p>
-        </div>
+
       </div>
     </footer>
   );

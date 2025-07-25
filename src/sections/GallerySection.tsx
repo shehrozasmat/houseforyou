@@ -7,7 +7,7 @@ export const GallerySection: React.FC = () => {
     <section className="py-5 bg-white">
       <div className="container">
         <div className="row">
-          <div className="col-lg-8 mx-auto text-center mb-5">
+          <div className="col-lg-8 mx-auto text-left mb-5">
             <h2 
               className="display-6 fw-bold mb-4" 
               style={{fontFamily: 'Manrope', color: '#0A332D', fontSize: '3rem', fontWeight: 800}}
@@ -22,7 +22,7 @@ export const GallerySection: React.FC = () => {
               Firma budowlana House-4-You to dobre rozwiązanie dla Twojej inwestycji budowy domu. 
               Z nami zrealizujesz marzenie o własnym domu lub funkcjonalnym biurze od A do Z.
             </p>
-            <div className="d-flex align-items-center justify-content-center mb-4">
+            <div className="d-flex align-items-center  mb-4">
               <div style={{width: '3px', height: '24px', backgroundColor: '#9DADAB'}} className="me-2"></div>
               <span className="fw-bold" style={{fontFamily: 'Manrope', color: '#6C8581'}}>więcej</span>
             </div>
@@ -100,6 +100,71 @@ export const GallerySection: React.FC = () => {
             </div>
           </div>
         </div>
+          <div className="row mb-5">
+              <div className="col-md-4 mb-4">
+                  <div
+                      className="rounded gallery-image-hover"
+                      style={{
+                          backgroundImage: `url('${getImagePath('/project-strzeniowka.png')}')`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                          height: '300px'
+                      }}
+                  ></div>
+                  <div className="mt-3">
+                      <p
+                          className="fw-semibold mb-0"
+                          style={{fontFamily: 'Manrope', color: '#000000'}}
+                      >
+                          Warszawa<br/>
+                          Realizacja na terenie Warszawy<br/>
+                          Wykonawca: House-4-you
+                      </p>
+                  </div>
+              </div>
+              <div className="col-md-4 mb-4">
+                  <div
+                      className="rounded gallery-image-hover"
+                      style={{
+                          backgroundImage: `url('${getImagePath('/project-thumb2.png')}')`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                          height: '300px'
+                      }}
+                  ></div>
+                  <div className="mt-3">
+                      <p
+                          className="fw-semibold mb-0"
+                          style={{fontFamily: 'Manrope', color: '#000000'}}
+                      >
+                          Warszawa<br/>
+                          Realizacja na terenie Warszawy<br/>
+                          Wykonawca: House-4-you
+                      </p>
+                  </div>
+              </div>
+              <div className="col-md-4 mb-4">
+                  <div
+                      className="rounded gallery-image-hover"
+                      style={{
+                          backgroundImage: `url('${getImagePath('/project-ursus.png')}')`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                          height: '300px'
+                      }}
+                  ></div>
+                  <div className="mt-3">
+                      <p
+                          className="fw-semibold mb-0"
+                          style={{fontFamily: 'Manrope', color: '#000000'}}
+                      >
+                          Warszawa<br/>
+                          Realizacja na terenie Warszawy<br/>
+                          Wykonawca: House-4-you
+                      </p>
+                  </div>
+              </div>
+          </div>
 
         <div className="row">
           <div className="col-12 text-center">

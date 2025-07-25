@@ -17,13 +17,15 @@ export const HeroSection: React.FC = () => {
           <div className="col-lg-10 text-center text-white">
             <h1 
               className="display-2 fw-bold mb-4 hero-title" 
-              style={{fontFamily: 'Manrope', fontSize: '3.5rem', lineHeight: '1.2'}}
+              style={{fontFamily: 'Manrope', fontSize: '2.5rem', lineHeight: '1.2', fontWeight: 700}}
             >
-              Pozwól nam zbudować <span style={{color: '#FFA74E'}}>dla Ciebie Dom.</span>
+                <span className="hover-text" style={{transition: 'color 0.3s'}}>Pozwól nam zbudować </span>
+                
+                <span style={{color: '#FFA74E'}}>dla Ciebie Dom.</span>
             </h1>
             <p 
               className="lead mb-5 hero-subtitle" 
-              style={{fontFamily: 'Manrope', fontSize: '1.5rem', fontWeight: 400}}
+              style={{fontFamily: 'Manrope', fontSize: '2rem', fontWeight: 400}}
             >
               Miejsce, gdzie poczujesz się naprawdę dobrze.
             </p>
