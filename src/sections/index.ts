@@ -9,3 +9,4 @@ export { ExperienceSection } from './ExperienceSection';
 export { ContactSection } from './ContactSection';
 export { ProblemSection } from './ProblemSection';
 export { BuildWithUsSection } from './BuildWithUsSection';
+export { BlogSection } from './BlogSection';
