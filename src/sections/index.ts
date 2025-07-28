@@ -1,4 +1,5 @@
 export { HeroSection } from './HeroSection';
+export { IntroSection } from './IntroSection';
 export { MissionSection } from './MissionSection';
 export { StatsSection } from './StatsSection';
 export { FeaturesSection } from './FeaturesSection';
